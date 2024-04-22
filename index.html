@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>   
+		<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="Content" content="Project: Web Design and Development">
+		<meta name="Page" content="Home Page">
+
+   <!--  Bootstrap stylesheet link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- local CSS stylesheet link -->
+    <link rel="stylesheet" href="./css/index.css">
+
+		<link rel="icon" href="./images//favicon.png"image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+
+    <title>Home</title> 
+    
+    
+</head>
+
+<body>
+
+  <section class="container-fluid p-3" style="background-color: pink;"> <!-- start of HTML for deal section -->
+
+      <h4 class="text-center">✿ Please double check your address at checkout ✿</h4>
+
+  </section>
+  
+
+  <nav class="navbar navbar-expand-lg bg-white py-4 d-flex flex-row justify-content-around">
+    
+    <button id="menu-btn" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="menuClick()">
+      <span id="icon-menu" class="navbar-toggler-icon"></span>
+    </button>
+
+    <a href="#" class="navbar-brand">
+      <img src="./images/logo.png" alt="" width="400px">
+    </a>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav" style="gap: 2em">
+      <!-- <div class="col-md-auto d-flex align-items-center">
+        <form class="d-flex ms-2 collapse" id="searchForm">
+          <input id="search-form" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div> -->
+      <div class="col d-flex justify-content-center">
+        <div class="nav flex-wrap">
+          <a class="nav-link active" href="#" id="navName"><strong>Home</strong></a>
+          <div class="dropdown">
+            <a id="navName" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>♡ Shop</strong></a>
+            <ul class="dropdown-menu" id="navDrop">
+              <li><a class="dropdown-item" href="#">new items!</a></li>
+              <li><a class="dropdown-item" href="#">keychains & charms</a></li>
+              <li><a class="dropdown-item" href="#">prints & photocards</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <a id="navName" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>Collections</strong></a>
+            <ul class="dropdown-menu" id="navDrop">
+              <li><a class="dropdown-item" href="#">kirbo</a></li>
+              <li><a class="dropdown-item" href="#">sanrii darlings</a></li>
+              <li><a class="dropdown-item" href="#">honkai star rail </a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <a id="navName" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>Info</strong></a>
+            <ul class="dropdown-menu" id="navDrop">
+              <li><a class="nav-link dropdown-item" href="#">about cafhune</a></li>
+              <li><a class="dropdown-item" href="#">shipping info</a></li>
+              <li><a class="dropdown-item" href="#">terms of service</a></li>
+            </ul>
+          </div>
+          <a class="nav-link" href="#" id="navName"><strong>Contact</strong></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+<header>
+  <div class="bg-image" style="
+        background-image: url(./images/Banner.jpg);
+        display: flex;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 70vh;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-content: center; 
+        align-items: center;
+        text-align: center;">
+  </div>
+</header>
+
+<section class="container-fluid p-3">
+
+<div class="d-flex justify-content-between" style="padding: 5em 4.5em 0em 4.5em">
+    <h1 style="color: rgba(101, 42, 24, 1);">₊˚. NEW ITEMS! ˚.*✩｡</h1>
+</div>
+
+<hr size="5px" noshade="color: rgba(101, 42, 24, 1)" style="margin: 1em 4.5em 1em 4.5em;">
+
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3" style="margin: 0em 4em 1em 4em;">
+      <!-- Product cards -->
+      <div class="col">
+          <div class="card h-100">
+              <img src="./images/new1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <a href="">
+                    <h5 class="card-title">Genshin Phone Charms ♡ Fontaine</h5>
+                    <p class="card-text">$11.00 USD</p>
+                  </a>
+                  <button class="btn">Add To Cart</button>
+              </div>
+          </div>
+      </div>
+      <div class="col">
+          <div class="card h-100">
+              <img src="./images/new2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <a href="">
+                    <h5 class="card-title">Genshin Phone Charms ♡ Fontaine Monstadt & Liyue</h5>
+                    <p class="card-text">$11.00 USD</p>
+                  </a>
+                  <button class="btn">Add To Cart</button>
+              </div>
+          </div>
+      </div>
+      <div class="col">
+          <div class="card h-100">
+              <img src="./images/new3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <a href="">
+                    <h5 class="card-title">Honkai SR Phone Charms</h5>
+                    <p class="card-text">$11.00 USD</p>
+                  </a>
+                  <button class="btn">Add To Cart</button>
+              </div>
+          </div>
+      </div>
+      <div class="col">
+          <div class="card h-100">
+              <img src="./images/new4.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <a href="">
+                    <h5 class="card-title">Acryilic Toploader ♡ Darling Photo Frame</h5>
+                    <p class="card-text">$15.00 USD</p>
+                  </a>
+                  <button class="btn">Add To Cart</button>
+              </div>
+          </div>
+      </div>
+      <div class="col">
+          <div class="card h-100">
+              <img src="./images/new5.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <a href="">
+                    <h5 class="card-title">Genshin Phone Charms ♡ Fontaine</h5>
+                    <p class="card-text">$11.00 USD</p>
+                  </a>
+                  <button class="btn">Add To Cart</button>
+              </div>
+          </div>
+      </div>
+      <div class="col">
+          <div class="card h-100">
+              <img src="./images/new6.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <a href="">
+                    <a href="">
+                      <h5 class="card-title">Genshin Phone Charms ♡ Fontaine Monstadt & Liyue</h5>
+                      <p class="card-text">$11.00 USD</p>
+                    </a>
+                  </a>
+                  <button class="btn">Add To Cart</button>
+              </div>
+          </div>
+      </div>
+      <div class="col">
+          <div class="card h-100">
+              <img src="./images/new7.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <a href="">
+                    <h5 class="card-title">Honkai SR Phone Charms</h5>
+                    <p class="card-text">$11.00 USD</p>
+                  </a>
+                  <button class="btn">Add To Cart</button>
+              </div>
+          </div>
+      </div>
+      <div class="col">
+          <div class="card h-100">
+              <img src="./images/new8.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <a href="">
+                    <h5 class="card-title">Acryilic Toploader ♡ Darling Photo Frame</h5>
+                    <p class="card-text">$15.00 USD</p>
+                  </a>
+                  <button class="btn">Add To Cart</button>
+              </div>
+          </div>
+      </div>
+    </div>
+  <div class="text-center"> 
+    <a href="#" class="text-decoration-underline" style="color: rgba(101, 42, 24, 1);">View all</a>
+  </div>
+</section> 
+
+<section class="container-fluid p-3" style="background-color: rgb(247, 236, 238);">  
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3" style="margin: 0em 4em 1em 4em;">
+        <!-- Product cards -->
+        <div class="col">
+            <div class="card" style="background-color: rgb(247, 236, 238);">
+                <img src="./images/homecollect1.png" class="card-img-top" alt="...">
+            </div>
+            <div class="mt-2" id="others">
+              <a href=""><h3 ml>originals →</h3></a>
+            </div>
+        </div>
+        <div class="col">
+          <div class="card" style="background-color: rgb(247, 236, 238);">
+              <img src="./images/homecollect2.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="mt-2" id="others">
+            <a href=""><h3>kirbo →</h3></a>
+          </div>
+      </div>
+      <div class="col">
+        <div class="card" style="background-color: rgb(247, 236, 238);">
+            <img src="./images/homecollect3.jpg" class="card-img-top" alt="...">
+        </div>
+        <div class="mt-2" id="others">
+          <a href=""><h3>honkai star rail →</h3></a>
+        </div>
+    </div>
+    <div class="col">
+      <div class="card" style="background-color: rgb(247, 236, 238);">
+          <img src="./images/homecollect4.jpg" class="card-img-top" alt="...">
+      </div>
+      <div class="mt-2" id="others">
+        <a href=""><h3>sanrii →</h3></a>
+      </div>
+  </div>
+  </section> 
+
+  <section class="container-fluid p-3">
+
+    <div class="d-flex justify-content-between" style="padding: 5em 4.5em 0em 4.5em">
+        <h1 style="color: rgba(101, 42, 24, 1);">LAST CHANCE!</h1>
+    </div>
+    
+    <hr size="5px" noshade="color: rgba(101, 42, 24, 1)" style="margin: 1em 4.5em 1em 4.5em;">
+    
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3" style="margin: 0em 4em 1em 4em;">
+          <!-- Product cards -->
+          <div class="col">
+              <div class="card h-100">
+                  <img src="./images/last1.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <a href="">
+                        <h5 class="card-title">Chainsaw Man Acrylic Keychain</h5>
+                        <p class="card-text">$11.00 USD</p>
+                      </a>
+                      <button class="btn">Add To Cart</button>
+                  </div>
+              </div>
+          </div>
+          <div class="col">
+              <div class="card h-100">
+                  <img src="./images/last2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <a href="">
+                        <h5 class="card-title">Add-on: Heart metal phone book</h5>
+                        <p class="card-text">$2.49 USD</p>
+                      </a>
+                      <button class="btn">Add To Cart</button>
+                  </div>
+              </div>
+          </div>
+          <div class="col">
+              <div class="card h-100">
+                  <img src="./images/last3.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <a href="">
+                        <h5 class="card-title">Genshin Impact Keychains [Inazuma]</h5>
+                        <p class="card-text">$12.00 USD</p>
+                      </a>
+                      <button class="btn">Add To Cart</button>
+                  </div>
+              </div>
+          </div>
+          <div class="col">
+              <div class="card h-100">
+                  <img src="./images/last4.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <a href="">
+                        <h5 class="card-title">Rainbow Holo Kirbo & Waddle dee Keychain</h5>
+                        <p class="card-text">$17.00 USD</p>
+                      </a>
+                      <button class="btn">Add To Cart</button>
+                  </div>
+              </div>
+          </div>
+    </section> 
+
+    
+  <section class="container-fluid p-5 d-flex justify-content-center align-items-center" style="background-color: rgb(249, 239, 241); color: rgba(101, 42, 24, 1);">
+    <div class="container" id="signup-form">
+      <h3 class="text-center mb-4">* be the first to know!</h3>
+      <h5 class="text-center mb-4">Sign Up Now for Shop Launches, Discounts, and More!</h5>
+      <form>
+        <div class="mb-3">
+          <input type="email" class="form-control p-3" id="email" placeholder="Email" style="border: 1px solid rgba(101, 42, 24, 1); border-radius: 5px; background-color: rgb(249, 239, 241);">
+        </div>
+        <div class="text-center" id="sign-up">
+          <button type="submit" style="width: 25%;" class="btn btn-primary">Sign Up</button>
+        </div>
+      </form>
+    </div>
+  </section>
+    
+
+  <footer class="container-fluid p-5 d-flex flex-wrap">  <div class="col-lg-3 col-md-6 mb-4">
+    <h3>Cafhune is 100% Artist Owned & Operated</h3>
+    <p>
+      Hello! It's Cafhune! Thank you for visiting! I love creating cute things and hope my art makes you smile!! ♡ TYSM for making my dreams possible!!!
+    </p>
+  </div>
+
+  <div class="col-lg-3 col-md-6 mb-4" id="shop-links">
+    <h3>Shop Links</h3>
+    <ul class="list-unstyled">
+      <li>
+        <a href="#" class="text-decoration-none">About Cafhune</a>
+      </li>
+      <li>
+        <a href="#" class="text-decoration-none">Shipping Info</a>
+      </li>
+      <li>
+        <a href="#" class="text-decoration-none">Terms of Service</a>
+      </li>
+      <li>
+        <a href="#" class="text-decoration-none">Contact</a>
+      </li>
+    </ul>
+  </div>
+
+  <a href="#" class="footer-brand me-5 mb-3">  <img src="./images/footlogo.png" alt="" width="250px">
+  </a>
+
+  <div class="col-lg-3 col-md-6 mb-4 d-flex flex-column justify-content-end">
+    <h3>Sign up for updates!</h3>
+    <form class="text-center">
+      <input type="email" style="background-color: pink; border: 1px solid rgba(101, 42, 24, 1); border-radius: 5px;" class="form-control mb-2" id="email" placeholder="Email">
+      <button type="submit" style="width: 50%;" class="btn btn-primary">Sign Up</button>
+    </form>
+  </div>
+
+</footer>
+
+
+   <!--  Bootsrap JS script links -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+        document.getElementById('search-btn').addEventListener('click', function () {
+          document.getElementById('search-form').style.display = 'block';
+        });
+
+        function menuClick() {
+          
+          const iconBtn = document.getElementById("icon-menu");
+
+          if (iconBtn.innerText == "X") {
+
+            iconBtn.innerText = " ";
+            iconBtn.classList.add("navbar-toggler-icon");
+          } 
+          
+          else {
+              iconBtn.innerText = "X";
+              iconBtn.classList.remove("navbar-toggler-icon");
+          }
+      }
+
+    </script>
+    
+</body>
+
+</html>
