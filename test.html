@@ -18,6 +18,19 @@
     <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
 
     <title>Home</title> 
+
+    <style>
+      .signup-form {
+          color: rgba(101, 42, 24, 1);
+          padding: 8em;
+      }
+
+      @media (max-width: 576px) {
+          .signup-form {
+              padding: 2em;
+          }
+      }
+  </style>
     
     
 </head>
@@ -212,101 +225,38 @@
   </div>
 </section> 
 
-<section class="container-fluid p-3" style="background-color: rgb(247, 236, 238);">  
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3" style="margin: 0em 4em 1em 4em;">
-        <!-- Product cards -->
-        <div class="col">
-            <div class="card" style="background-color: rgb(247, 236, 238);">
-                <img src="./images/homecollect1.png" class="card-img-top" alt="...">
-            </div>
-            <div class="mt-2" id="others">
-              <a href=""><h3 ml>originals →</h3></a>
-            </div>
-        </div>
-        <div class="col">
-          <div class="card" style="background-color: rgb(247, 236, 238);">
-              <img src="./images/homecollect2.jpg" class="card-img-top" alt="...">
-          </div>
-          <div class="mt-2" id="others">
-            <a href=""><h3>kirbo →</h3></a>
-          </div>
-      </div>
-      <div class="col">
-        <div class="card" style="background-color: rgb(247, 236, 238);">
-            <img src="./images/homecollect3.jpg" class="card-img-top" alt="...">
-        </div>
-        <div class="mt-2" id="others">
-          <a href=""><h3>honkai star rail →</h3></a>
-        </div>
-    </div>
-    <div class="col">
-      <div class="card" style="background-color: rgb(247, 236, 238);">
-          <img src="./images/homecollect4.jpg" class="card-img-top" alt="...">
-      </div>
-      <div class="mt-2" id="others">
-        <a href=""><h3>sanrii →</h3></a>
-      </div>
-  </div>
-  </section>
-
-  <section class="container-fluid p-3" style="color: rgba(101, 42, 24, 1);">
-    <div class="container" id="signup-form" >
-      <h3 class="text-center mb-4">* be the first to know!</h3>
-      <h5 class="text-center mb-4">Sign Up Now for Shop Launches, Discounts, and More!</h5>
-      <form>
-        <div class="mb-1" style="margin: 0em 25em 0em 25em;">
-          <input type="email" class="form-control p-3" id="email" placeholder="Email" style="border: 1px solid rgba(101, 42, 24, 1); border-radius: 5px;">
-        </div>
-        <div class="text-center">
-          <button style="width: 25%;" type="submit" class="btn btn-primary">Sign Up</button>
-        </div>
-      </form>
-    </div>
-  </section>
-
-  <footer class="container-fluid p-5 d-flex flex-row">
-
-    <div class="col-lg-3 col-md-6 mb-4">  
+<footer class="container-fluid p-3 p-md-5 align-items-center">
+  <div class="d-flex row justify-content-center justify-content-md-evenly" >
+    <div class="col-lg-3 col-md-6 mb-4" id="cafpost">
       <h3>Cafhune is 100% Artist Owned & Operated</h3>
-      <p>
-        Hello! It's Cafhune! Thank you for visiting! I love creating cute 
-        things and hope my art makes you smile!! ♡ TYSM for making my 
-        dreams possible!!!
-      </p>
+      <p>Hello! It's Cafhune! Thank you for visiting! I love creating cute things and hope my art makes you smile!! ♡ TYSM for making my dreams possible!!!</p>
     </div>
-
-    <div class="col-lg-3 col-md-6 mb-4" id="shop-links">  
-      
-      <h3>Shop Links</h3>
-      
-      <ul class="list-unstyled" >  
-        <li>
-          <a href="#" class="text-decoration-none">About Cafhune</a>
-        </li>
-        <li>
-          <a href="#" class="text-decoration-none">Shipping Info</a>
-        </li>
-        <li>
-          <a href="#" class="text-decoration-none">Terms of Service</a>
-        </li>
-        <li>
-          <a href="#" class="text-decoration-none">Contact</a>
-        </li>
+    <div class="col-lg-3 col-md-6 mb-4" id="caflinks">
+      <ul class="list-unstyled justify-content-center align-self-center" id="shop-links">
+        <h3>Shop Links</h3>
+        <li><a href="#" class="text-decoration-none">About Cafhune</a></li>
+        <li><a href="#" class="text-decoration-none">Shipping Info</a></li>
+        <li><a href="#" class="text-decoration-none">Terms of Service</a></li>
+        <li><a href="#" class="text-decoration-none">Contact</a></li>
       </ul>
     </div>
-
-    <a href="#" class="footer-brand me-5">
-      <img src="./images/footlogo.png" alt="" width="250px">
-    </a>
-
-    <div class="col-lg-3 col-md-6 mb-4 d-flex flex-column justify-content-end">  <h3>Sign up for updates!</h3>
-      <form>
-        <input type="email" class="form-control mb-2" id="email" placeholder="Enter your email">
-        <button type="submit" class="btn btn-primary">Sign Up</button>
-      </form>
+    <div class="col-lg-3 col-md-6 mb-4">
+      <div class="d-flex flex-column align-items-center">
+        <a href="#" class="footer-brand mb-3">
+          <img src="./images/footlogo.png" alt="" width="150px" class="img-fluid">
+        </a>
+        <h3 class="mb-3">Sign up for updates!</h3>
+        <form style="max-width: 300px;">
+          <div class="input-group mb-3">
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" aria-label="Enter your email" aria-describedby="email-addon" style="padding: 1em; border-radius: 5px; border: 1px solid rgba(101, 42, 24, 1);">
+            <button class="btn btn-outline" type="button" id="email-addon">Sign Up</button>
+          </div>
+        </form>
+      </div>
     </div>
+  </div>
+</footer>
 
-  </footer>
 
    <!--  Bootsrap JS script links -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

@@ -136,6 +136,10 @@ body {
     text-decoration: underline;
 }
 
+.card-body .btn {
+    margin-top: 3em;
+}
+
 .btn {
     margin-left: 0.3em;
     margin-top: 1em;
@@ -154,7 +158,9 @@ body {
     cursor: pointer;
 }
 
-
+.btn-added{
+    background-color: pink;
+}
 
 #others a {
     text-decoration: none;
@@ -190,3 +196,39 @@ footer #shop-links a:hover {
     border-bottom: 3px solid rgba(101, 42, 24, 1);
 
 }
+
+@media (max-width: 769px) {
+    #cafpost, #caflinks{ 
+      width: 50%;
+      flex-flow: row;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+    }
+ 
+  }
+
+  @media (max-width: 600px) {
+    #cafpost, #caflinks{ 
+      flex-flow: column;
+      width: 80%;
+      align-items: center;
+  
+    }
+ 
+  }
+
+@media all and (max-width: 400px) {
+
+    .btn {
+        width: 100%;
+        padding: 0.6em 1.5em 0.6em 1.5em;
+    }
+ 
+}
+
+@media (min-width: 576px) {
+    .container {
+      max-width: 400px; 
+    }
+  }
