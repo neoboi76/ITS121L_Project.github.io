@@ -7,7 +7,6 @@ const menuBtn = document.getElementById('menu-btn');
 const sidebar = document.getElementById('sidebar');
 const overlay = document.getElementById('overlay');
 let sideClose = document.getElementById('sideClose');
-let cart = document.querySelector('.cart');
 
 document.querySelectorAll('.cart-btn').forEach((cartBtn) => {
 
@@ -22,8 +21,11 @@ document.querySelectorAll('.cart-btn').forEach((cartBtn) => {
       
       if (addMsg) {
           addMsg.innerHTML = "<strong>Added To Cart</strong>";
-          let cartNum = productCard.querySelector('.items');
-          cart.innerText = parseInt(cart.innerText) + parseInt(cartNum.value);
+         
+          document.querySelectorAll('.cart').forEach((cart) => {
+            let cartNum = productCard.querySelector('.items');
+            cart.innerText = parseInt(cart.innerText) + parseInt(cartNum.value);
+          })
       }
 
 
@@ -36,7 +38,6 @@ document.querySelectorAll('.cart-btn').forEach((cartBtn) => {
   });
 
 });
-
 
 /* Opens menu */
 menuBtn.addEventListener('click', () => {
