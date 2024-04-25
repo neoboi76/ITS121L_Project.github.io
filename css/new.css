@@ -10,9 +10,18 @@ h1 {
     color:pink !important;
 }
 
+
 .active {
     color: pink !important;
     border-bottom: 3px solid pink;
+}
+
+@media all and (max-width: 500px) {
+
+    .navbar-brand img {
+        width: 250px;
+    }
+
 }
 
 .dropdown-menu {
