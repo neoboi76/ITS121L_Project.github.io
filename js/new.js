@@ -10,29 +10,17 @@ let sideClose = document.getElementById('sideClose');
 
 document.querySelectorAll('.cart-btn').forEach((cartBtn) => {
 
-  let timeoutId;
+    cartBtn.addEventListener('click', function() {
 
-  cartBtn.addEventListener('click', function() {
-    
-      clearTimeout(timeoutId);
+        let productCard = cartBtn.closest('.card');
+        let addMsg = productCard.querySelector('.add-msg');
+        if (addMsg) {
+            addMsg.innerHTML = "<strong>Added To Cart</strong>";
+        }
+        
+    }) 
 
-      let productCard = cartBtn.closest('.card');
-      let addMsg = productCard.querySelector('.add-msg');
-      
-      if (addMsg) {
-          addMsg.innerHTML = "<strong>Added To Cart</strong>";
-      }
-
-      timeoutId = setTimeout(() => {
-          if (addMsg) {
-              addMsg.innerHTML = "";
-          }
-      }, 2000);
-
-  });
-
-});
-
+})
 
 
 /* Opens menu */

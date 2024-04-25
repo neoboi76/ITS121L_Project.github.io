@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>   
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Content" content="Project: Web Design and Development">
+    <meta name="Page" content="Shop Page">
+
+   <!--  Bootstrap stylesheet link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- local CSS stylesheet link -->
+    <link rel="stylesheet" href="./css/new.css">
+
+		<link rel="icon" href="./images/footlogo.png">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+
+    <title>new items</title> 
+    
+</head>
+
+<body>
+
+    <section class="container-fluid p-3" style="background-color: pink;"> <!-- start of HTML for warning section -->
+
+        <h4 class="text-center">✿ Please double check your address at checkout ✿</h4>
+
+    </section>
+  
+
+    <nav class="navbar navbar-expand-lg bg-white py-4 d-flex flex-row justify-content-around">
+        <button id="menu-btn" class="navbar-toggler d-lg-none" type="button" aria-label="Toggle navigation">
+            <span id="icon-menu" class="navbar-toggler-icon"></span>
+        </button>
+
+        <a href="#" class="navbar-brand">
+            <img src="./images/logo.png" alt="" width="400px">
+        </a>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link" href="./index.html" id="navName"><strong>Home</strong></a>            </li>
+                <li>
+                <div class="dropdown">
+                    <a id="navName" class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>♡ Shop</strong></a>
+                    <ul class="dropdown-menu" id="navDrop">
+                    <li><a class="dropdown-item active" href="./new.html">new items!</a></li>
+                    <li><a class="dropdown-item" href="#">keychains & charms</a></li>
+                    <li><a class="dropdown-item" href="#">prints & photocards</a></li>
+                    </ul>
+                </div>
+                </li>
+                <li>
+                <div class="dropdown">
+                    <a id="navName" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>Collections</strong></a>
+                    <ul class="dropdown-menu" id="navDrop">
+                    <li><a class="dropdown-item" href="#">kirbo</a></li>
+                    <li><a class="dropdown-item" href="#">sanrii darlings</a></li>
+                    <li><a class="dropdown-item" href="#">honkai star rail </a></li>
+                    </ul>
+                </div>
+                
+                </li>
+                <li>
+                <div class="dropdown">
+                    <a id="navName" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>Info</strong></a>
+                    <ul class="dropdown-menu" id="navDrop">
+                    <li><a class="dropdown-item" href="#">about cafhune</a></li>
+                    <li><a class="dropdown-item" href="#">shipping info</a></li>
+                    <li><a class="dropdown-item" href="#">terms of service</a></li>
+                    </ul>
+                </div>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#" id="navName"><strong>Contact</strong></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="overlay" id="overlay"></div>
+
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-content">
+            <div id="sideClose">
+            <span style="color: rgba(101, 42, 24, 1);" class="close-btn p-1"><strong>X CLOSE</strong></span>
+            </div>
+            <h3 style="color: rgba(101, 42, 24, 1)" >Menu</h3>
+            <ul class="list-unstyled">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html" id="navName"><strong>Home</strong></a>            
+                </li>
+                <li>
+                    <div class="dropdown">
+                    <a id="navName" class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>♡ Shop</strong></a>
+                    <ul class="dropdown-menu" id="navDrop">
+                        <li><a class="dropdown-item active" href="./new.html">new items!</a></li>
+                        <li><a class="dropdown-item" href="#">keychains & charms</a></li>
+                        <li><a class="dropdown-item" href="#">prints & photocards</a></li>
+                    </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                    <a id="navName" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>Collections</strong></a>
+                    <ul class="dropdown-menu" id="navDrop">
+                        <li><a class="dropdown-item" href="#">kirbo</a></li>
+                        <li><a class="dropdown-item" href="#">sanrii darlings</a></li>
+                        <li><a class="dropdown-item" href="#">honkai star rail </a></li>
+                    </ul>
+                    </div>
+                    
+                </li>
+                <li>
+                    <div class="dropdown">
+                    <a id="navName" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>Info</strong></a>
+                    <ul class="dropdown-menu" id="navDrop">
+                        <li><a class="dropdown-item" href="#">about cafhune</a></li>
+                        <li><a class="dropdown-item" href="#">shipping info</a></li>
+                        <li><a class="dropdown-item" href="#">terms of service</a></li>
+                    </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="navName"><strong>Contact</strong></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="container-fluid p-3">
+        <table style="width: 100%;">
+            <tr>
+                <td colspan="4" style="padding: 5em 4.5em 0em 4.5em;">
+                    <h1 style="color: rgba(101, 42, 24, 1);">new!</h1>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <hr size="5px" noshade="color: rgba(101, 42, 24, 1)" style="margin: 1em 4.5em 1em 4.5em;">
+                </td>
+            </tr>
+            <tr class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3" style="margin: 0em 4em 1em 4em;">
+                <!-- Product cards -->
+                <td class="col">
+                    <div class="card h-100">
+                        <a href=""><img src="./images/new1.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="">
+                                <h5 class="card-title">Genshin Phone Charms ♡ Fontaine</h5>
+                            </a>
+                            <p class="card-text">$11.00 USD</p>
+                            <label for="items">Quantity</label>
+                            <select name="items" id="items" style="border: 1px solid rgba(101, 42, 24, 1); color: rgba(101, 42, 24, 1);;">
+                                <option value="1">1</option>
+                                <option value="1">2</option>
+                                <option value="1">3</option>
+                            </select>
+                            <span class="add-msg"></span>
+                            <button class="btn cart-btn">Add To Cart</button>
+                        </div>
+                    </div>
+                </td>
+                <td class="col">
+                    <div class="card h-100">
+                        <a href="">
+                          <img src="./images/new2.jpg" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <a href="">
+                                <h5 class="card-title">Genshin Phone Charms ♡ Fontaine Monstadt & Liyue</h5>
+                            </a>
+                            <p class="card-text">$11.00 USD</p>
+                            <label for="items">Quantity</label>
+                            <select name="items" id="items" style="border: 1px solid rgba(101, 42, 24, 1); color: rgba(101, 42, 24, 1);;">
+                                <option value="1">1</option>
+                                <option value="1">2</option>
+                                <option value="1">3</option>
+                            </select>
+                            <span class="add-msg"></span>
+                            <button class="btn cart-btn">Add To Cart</button>
+                        </div>
+                    </div>
+                </td>
+                <td class="col">
+                    <div class="card h-100">
+                        <a href=""><img src="./images/new3.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="">
+                                <h5 class="card-title">Honkai SR Phone Charms</h5>
+                            </a>
+                            <p class="card-text">$11.00 USD</p>
+                            <label for="items">Quantity</label>
+                            <select name="items" id="items" style="border: 1px solid rgba(101, 42, 24, 1); color: rgba(101, 42, 24, 1);;">
+                                <option value="1">1</option>
+                                <option value="1">2</option>
+                                <option value="1">3</option>
+                            </select>
+                            <span class="add-msg"></span>
+                            <button class="btn cart-btn">Add To Cart</button>
+                        </div>
+                    </div>
+                </td>
+                <td class="col">
+                    <div class="card h-100">
+                        <a href=""><img src="./images/new4.png" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="">
+                                <h5 class="card-title">Acryilic Toploader ♡ Darling Photo Frame</h5>
+                            </a>
+                            <p class="card-text">$15.00 USD</p>
+                            <label for="items">Quantity</label>
+                            <select name="items" id="items" style="border: 1px solid rgba(101, 42, 24, 1); color: rgba(101, 42, 24, 1);;">
+                                <option value="1">1</option>
+                                <option value="1">2</option>
+                                <option value="1">3</option>
+                            </select>
+                            <span class="add-msg"></span>
+                            <button class="btn cart-btn">Add To Cart</button>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3" style="margin: 0em 4em 1em 4em;">
+                <!-- Product cards -->
+                <td class="col">
+                    <div class="card h-100">
+                        <a href=""><img src="./images/new5.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="">
+                                <h5 class="card-title">Genshin Phone Charms ♡ Fontaine</h5>
+                            </a>
+                            <p class="card-text">$11.00 USD</p>
+                            <label for="items">Quantity</label>
+                            <select name="items" id="items" style="border: 1px solid rgba(101, 42, 24, 1); color: rgba(101, 42, 24, 1);;">
+                                <option value="1">1</option>
+                                <option value="1">2</option>
+                                <option value="1">3</option>
+                            </select>
+                            <span class="add-msg"></span>
+                            <button class="btn cart-btn">Add To Cart</button>
+                        </div>
+                    </div>
+                </td>
+                <td class="col">
+                    <div class="card h-100">
+                        <a href=""><img src="./images/new6.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="">
+                                <h5 class="card-title">Genshin Phone Charms ♡ Fontaine Monstadt & Liyue</h5>
+                            </a>
+                            <p class="card-text">$11.00 USD</p>
+                            <label for="items">Quantity</label>
+                            <select name="items" id="items" style="border: 1px solid rgba(101, 42, 24, 1); color: rgba(101, 42, 24, 1);;">
+                                <option value="1">1</option>
+                                <option value="1">2</option>
+                                <option value="1">3</option>
+                            </select>
+                            <span class="add-msg"></span>
+                            <button class="btn cart-btn">Add To Cart</button>
+                        </div>
+                    </div>
+                </td>
+                <td class="col">
+                    <div class="card h-100">
+                        
+                      <a href=""><img src="./images/new7.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="">
+                                <h5 class="card-title">Honkai SR Phone Charms</h5>
+                            </a>
+                            <p class="card-text">$11.00 USD</p>
+                            <label for="items">Quantity</label>
+                            <select name="items" id="items" style="border: 1px solid rgba(101, 42, 24, 1); color: rgba(101, 42, 24, 1);;">
+                                <option value="1">1</option>
+                                <option value="1">2</option>
+                                <option value="1">3</option>
+                            </select>
+                            <span class="add-msg"></span>
+                            <button class="btn cart-btn">Add To Cart</button>
+                        </div>
+                    </div>
+                </td>
+                <td class="col">
+                    <div class="card h-100">
+                        <a href=""><img src="./images/new8.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="">
+                                <h5 class="card-title">Acryilic Toploader ♡ Darling Photo Frame</h5>
+                            </a>
+                            <p class="card-text">$15.00 USD</p>
+                            <label for="items">Quantity</label>
+                            <select name="items" id="items" style="border: 1px solid rgba(101, 42, 24, 1); color: rgba(101, 42, 24, 1);;">
+                                <option value="1">1</option>
+                                <option value="1">2</option>
+                                <option value="1">3</option>
+                            </select>
+                            <span class="add-msg"></span>
+                            <button class="btn cart-btn">Add To Cart</button>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3" style="margin: 0em 4em 1em 4em;">
+                <!-- Product cards -->
+                <td class="col">
+                    <div class="card h-100">
+                        <a href=""><img src="./images/new9.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="">
+                                <h5 class="card-title">Taroumaru Omamori</h5>
+                            </a>
+                            <p class="card-text">$9.99 USD</p>
+                            <label for="items">Quantity</label>
+                            <select name="items" id="items" style="border: 1px solid rgba(101, 42, 24, 1); color: rgba(101, 42, 24, 1);;">
+                                <option value="1">1</option>
+                                <option value="1">2</option>
+                                <option value="1">3</option>
+                            </select>
+                            <span class="add-msg"></span>
+                            <button class="btn cart-btn">Add To Cart</button>
+                        </div>
+                    </div>
+                </td>
+                <td class="col">
+                    <div class="card h-100">
+                        <a href=""><img src="./images/new10.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="">
+                                <h5 class="card-title">Kirbo Burger 2.5in Wooden Pin</h5>
+                            </a>
+                            <p class="card-text">$19.99 USD</p>
+                            <label for="items">Quantity</label>
+                            <select name="items" id="items" style="border: 1px solid rgba(101, 42, 24, 1); color: rgba(101, 42, 24, 1);;">
+                                <option value="1">1</option>
+                                <option value="1">2</option>
+                                <option value="1">3</option>
+                            </select>
+                            <span class="add-msg"></span>
+                            <button class="btn cart-btn">Add To Cart</button>
+                        </div>
+                    </div>
+                </td>
+                <td class="col">
+                    <div class="card h-100">
+                        <a href=""><img src="./images/new11.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="">
+                                <h5 class="card-title">Yae Miko Enamel Pin</h5>
+                            </a>
+                            <p class="card-text">$9.99 USD</p>
+                            <label for="items">Quantity</label>
+                            <select name="items" id="items" style="border: 1px solid rgba(101, 42, 24, 1); color: rgba(101, 42, 24, 1);;">
+                                <option value="1">1</option>
+                                <option value="1">2</option>
+                                <option value="1">3</option>
+                            </select>
+                            <span class="add-msg"></span>
+                            <button class="btn cart-btn">Add To Cart</button>
+                        </div>
+                    </div>
+                </td>
+                <td class="col">
+                    <div class="card h-100">
+                        <a href=""><img src="./images/new12.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="">
+                                <h5 class="card-title">Raiden Ei Enamel Pin</h5>
+                            </a>
+                            <p class="card-text">$9.99 USD</p>
+                            <label for="items">Quantity</label>
+                            <select name="items" id="items" style="border: 1px solid rgba(101, 42, 24, 1); color: rgba(101, 42, 24, 1);;">
+                                <option value="1">1</option>
+                                <option value="1">2</option>
+                                <option value="1">3</option>
+                            </select>
+                            <span class="add-msg"></span>
+                            <button class="btn cart-btn">Add To Cart</button>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3" style="margin: 0em 4em 1em 4em;">
+                <!-- Product cards -->
+                <td class="col">
+                    <div class="card h-100">
+                        <a href=""><img src="./images/new13.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="">
+                                <h5 class="card-title">Rainbow Holo Kirbo & Waddle dee Keychain</h5>
+                            </a>
+                            <p class="card-text">$17.00 USD</p>
+                            <label for="items">Quantity</label>
+                            <select name="items" id="items" style="border: 1px solid rgba(101, 42, 24, 1); color: rgba(101, 42, 24, 1);;">
+                                <option value="1">1</option>
+                                <option value="1">2</option>
+                                <option value="1">3</option>
+                            </select>
+                            <span class="add-msg"></span>
+                            <button class="btn cart-btn">Add To Cart</button>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </section> 
+
+ 
+  <section class="container-fluid p-3 p-md-5 d-flex justify-content-center align-items-center" style="background-color: rgb(249, 239, 241); color: rgba(101, 42, 24, 1);">
+    <div class="container" id="signup-form">
+      <h3 class="text-center mb-4">♡ Join my Newsletter ♡</h3>
+      <h5 class="text-center mb-4">Be the first to know when my shop launches, new products, and more! ♡</h5>
+      <form>
+        <div class="mb-3 text-center">
+          <input type="email" class="form-control p-3 mx-auto" id="email" placeholder="Email" style="border: 1px solid rgba(101, 42, 24, 1); border-radius: 5px; background-color: rgb(249, 239, 241);">
+        </div>
+        <div class="text-center" id="sign-up">
+          <button type="button" id="email-addon" style="width: 50%;" class="btn btn-outline">Sign Up</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  
+  <footer class="container-fluid p-3 p-md-5 align-items-center">
+    <div class="d-flex row justify-content-center justify-content-md-evenly" >
+        <div class="col-lg-3 col-md-6 mb-4" id="cafpost">
+        <h3>Cafhune is 100% Artist Owned & Operated</h3>
+        <p>Hello! It's Cafhune! Thank you for visiting! I love creating cute things and hope my art makes you smile!! ♡ TYSM for making my dreams possible!!!</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4" id="caflinks">
+        <ul class="list-unstyled justify-content-center align-self-center" id="shop-links">
+            <h3>Shop ✿ Links</h3>
+            <li>
+                <a class=" text-decoration-none" href="#">Home</a>            
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a class="dropdown-toggle  text-decoration-none" href="./new.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">♡ Shop</a>
+                    <ul class="dropdown-menu" id="navDrop">
+                    <li><a class="dropdown-item  text-decoration-none" href="./new.html">new items!</a></li>
+                    <li><a class="dropdown-item  text-decoration-none" href="#">keychains & charms</a></li>
+                    <li><a class="dropdown-item  text-decoration-none" href="#">prints & photocards</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a class="dropdown-toggle  text-decoration-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Collections</a>
+                    <ul class="dropdown-menu" id="navDrop">
+                    <li><a class="dropdown-item  text-decoration-none" href="#">kirbo</a></li>
+                    <li><a class="dropdown-item  text-decoration-none" href="#">sanrii darlings</a></li>
+                    <li><a class="dropdown-item  text-decoration-none" href="#">honkai star rail </a></li>
+                    </ul>
+                </div>  
+                </li>
+                <li>
+                <div class="dropdown">
+                    <a class="dropdown-toggle  text-decoration-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>Info</strong></a>
+                    <ul class="dropdown-menu" id="navDrop">
+                    <li><a class="dropdown-item  text-decoration-none" href="#">about cafhune</a></li>
+                    <li><a class="dropdown-item  text-decoration-none" href="#">shipping info</a></li>
+                    <li><a class="dropdown-item  text-decoration-none" href="#">terms of service</a></li>
+                    </ul>
+                </div>
+                </li>
+                <li class="nav-item">
+                <a class=" text-decoration-none" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+        <div class="d-flex flex-column align-items-center">
+            <a href="#" class="footer-brand mb-3">
+            <img src="./images/footlogo.png" alt="" width="150px" class="img-fluid">
+            </a>
+            <h3 class="mb-3">✶ Sign up for updates!✶ </h3>
+            <form style="max-width: 300px;">
+                <div class="input-group mb-3">
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" aria-label="Enter your email" aria-describedby="email-addon" style="padding: 1em; border-radius: 5px; border: 1px solid rgba(101, 42, 24, 1);">
+                    <button class="btn btn-outline" type="button" id="email-addon">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="text-center mt-2">
+        <p style="font-size: 1.2rem; font-weight: bold;">Copyright &copy; — Developed by Dino Alfred T. Timbol — 2024</p> 
+    </div>
+
+    </div>
+  </footer>
+
+
+<!--  Bootsrap JS script links -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<script src="/js/new.js"></script>
+
+    
+</body>
+
+</html>
