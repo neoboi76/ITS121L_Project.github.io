@@ -6,7 +6,7 @@ h1 {
     font-size: 50px;
 }
 
-.nav-link:hover, .dropdown-item:hover {
+.nav-link:hover {
     color:pink !important;
 }
 
@@ -17,6 +17,10 @@ h1 {
 
 .dropdown-menu {
     animation: fadeInUp 0.5s;
+}
+
+.dropdown-item:hover {
+    text-decoration: underline;
 }
 
 @keyframes fadeInUp {
