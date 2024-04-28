@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>   
+		<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="Content" content="Project: Web Design and Development">
+		<meta name="Page" content="Home Page">
+
+   <!--  Bootstrap stylesheet link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- local CSS stylesheet link -->
+    <link rel="stylesheet" href="./css/contact.css">
+
+		<link rel="icon" href="./images/favicon1.png">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+
+    <title>Home</title> 
+    
+</head>
+
+<body>
+
+  <section class="container-fluid p-3" style="background-color: pink;"> <!-- start of HTML for warning section -->
+
+      <h4 class="text-center">✿ Please double check your address at checkout ✿</h4>
+
+  </section>
+  
+
+  <nav class="navbar navbar-expand-lg bg-white py-4 d-flex flex-row justify-content-around">
+    <button id="menu-btn" class="navbar-toggler d-lg-none" type="button" aria-label="Toggle navigation">
+        <span id="icon-menu" class="navbar-toggler-icon"></span>
+    </button>
+
+    <a href="#" class="navbar-brand">
+        <img src="./images/logo.png" alt="" width="400px">
+    </a>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html" id="navName" ><strong>Home</strong></a>            </li>
+            <li>
+              <div class="dropdown">
+                <a id="navName" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>♡ Shop</strong></a>
+                <ul class="dropdown-menu" id="navDrop">
+                  <li><a class="dropdown-item" href="./new.html">new items!</a></li>
+                  <li><a class="dropdown-item" href="./keycharms.html">keychains & charms</a></li>
+                  <li><a class="dropdown-item" href="./printcards.html">prints & photocards</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="dropdown">
+                <a id="navName" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>Collections</strong></a>
+                <ul class="dropdown-menu" id="navDrop">
+                  <li><a class="dropdown-item" href="#">kirbo</a></li>
+                  <li><a class="dropdown-item" href="#">sanrii darlings</a></li>
+                  <li><a class="dropdown-item" href="#">honkai star rail </a></li>
+                </ul>
+              </div>
+              
+            </li>
+            <li>
+              <div class="dropdown">
+                <a id="navName" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>Info</strong></a>
+                <ul class="dropdown-menu" id="navDrop">
+                  <li><a class="dropdown-item">about cafhune</a></li>
+                  <li><a class="dropdown-item" href="#">shipping info</a></li>
+                  <li><a class="dropdown-item" href="#">terms of service</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./contact.html" id="navName"><strong>Contact</strong></a>
+            </li>
+        </ul>
+        <div style="position: relative; width: fit-content;">
+          <a href="#">
+              <img src="./images/cart-icon.png" alt="" width="50px">
+          </a>
+          <span class="cart" style="position: absolute; top: -10px; right: -10px; background-color: red; color: white; border-radius: 50%; padding: 5px 10px; font-size: 14px;">0</span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="overlay" id="overlay"></div>
+
+  <div class="sidebar" id="sidebar">
+      <div class="sidebar-content">
+          <div id="sideClose">
+            <span style="color: rgba(101, 42, 24, 1);" class="close-btn p-1"><strong>X CLOSE</strong></span>
+          </div>
+          <h3 style="color: rgba(101, 42, 24, 1)" >Menu</h3>
+          <ul class="list-unstyled">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html" id="navName"><strong>Home</strong></a>            </li>
+            <li>
+              <div class="dropdown">
+                <a id="navName" class="nav-link dropdown-toggle" href="./new.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>♡ Shop</strong></a>
+                <ul class="dropdown-menu" id="navDrop">
+                  <li><a class="dropdown-item" href="./new.html">new items!</a></li>
+                  <li><a class="dropdown-item" href="./keycharms.html">keychains & charms</a></li>
+                  <li><a class="dropdown-item" href="./printcards.html">prints & photocards</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="dropdown">
+                <a id="navName" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>Collections</strong></a>
+                <ul class="dropdown-menu" id="navDrop">
+                  <li><a class="dropdown-item" href="#">kirbo</a></li>
+                  <li><a class="dropdown-item" href="#">sanrii darlings</a></li>
+                  <li><a class="dropdown-item" href="#">honkai star rail </a></li>
+                </ul>
+              </div>  
+            </li>
+            <li>
+              <div class="dropdown">
+                <a id="navName" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>Info</strong></a>
+                <ul class="dropdown-menu" id="navDrop">
+                  <li><a class="dropdown-item" href="#">about cafhune</a></li>
+                  <li><a class="dropdown-item" href="#">shipping info</a></li>
+                  <li><a class="dropdown-item" href="#">terms of service</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./contact.html" id="navName"><strong>Contact</strong></a>
+            </li>
+        </ul>
+          <div style="position: relative; width: fit-content;">
+            <a href="#">
+                <img src="./images/cart-icon.png" alt="" width="50px">
+            </a>
+            <span class="cart" style="position: absolute; top: -10px; right: -10px; background-color: red; color: white; border-radius: 50%; padding: 5px 10px; font-size: 14px;">0</span>
+        </div>
+      </div>
+  </div>
+
+
+    <section class="form-container">
+        <div class="form-proper">
+            <h1 class="mb-5" >Contact Us</h1>
+            <p>Before sending a message, please check our <a href="./shipping.html">Shipping</a>, <a href="./tos.html">Terms of Service</a>, and <a href="./about.html">About Me</a> pages!</p>
+            <p class="mb-5" >Customer service operates from Monday to Friday and is closed on holidays. Please include your order number when filling out the form below. Thank you for your patience!</p>
+            <form method="post" action="mailto:dattimbol@mymail.mapua.edu.ph">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div class="mb-4" >
+                        <input type="text" name="name" class="form-control" maxlength="50" autocomplete="on" placeholder="Name">
+                    </div>
+                    <div class="mb-4">
+                        <input type="email" name="username" class="form-control" maxlength="50" autocomplete="on" placeholder="Email *">
+                    </div>
+                    <div class="mb-4">
+                        <input type="tel" name="phone" class="form-control" maxlength="20" autocomplete="on" placeholder="Phone number">
+                    </div>
+                    <div class="mb-4">
+                        <textarea id="misc" class="form-control" rows="5" placeholder="Comment"></textarea>
+                    </div>
+                </fieldset>
+                
+                <div>
+                    <button type="submit" style="width: 35%; border: 1px solid red;" class="btn btn-outline">Send</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+ 
+  <footer class="container-fluid p-3 p-md-5 align-items-center">
+    <div class="d-flex row justify-content-center justify-content-md-evenly" >
+        <div class="col-lg-3 col-md-6 mb-4" id="cafpost">
+          <h3>Cafhune is 100% Artist Owned & Operated</h3>
+          <p>Hello! It's Cafhune! Thank you for visiting! I love creating cute things and hope my art makes you smile!! ♡ TYSM for making my dreams possible!!!</p>
+
+          <ul class="d-flex flex-row list-unstyled align-items-center justify-content-center">
+            <li style="max-width: 55px;">
+                <a class="text-decoration-none" href="https://www.instagram.com/cafhune_art">
+                    <img src="./images/ig.png" alt="" width="40px">
+                </a>
+            </li>
+            <li style="max-width: 55px;"> 
+                <a class="text-decoration-none" href="https://twitter.com/cafhune">
+                    <img src="./images/x.png" alt="" width="40px">
+                </a>
+            </li>
+            <li style="max-width: 55px;">
+                <a class="text-decoration-none" href="https://ko-fi.com/cafhune">
+                    <img src="./images/ko.png" alt="" width="40px">
+                </a>
+            </li>
+            <li style="max-width: 55px;">
+                <a class="text-decoration-none" href="https://cafhune.carrd.co/">
+                    <img src="./images/card.png" alt="" width="40px">
+                </a>
+            </li>
+        </ul>        
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4" id="caflinks">
+      <ul class="list-unstyled justify-content-center align-self-center" id="shop-links">
+          <h3>Shop ✿ Links</h3>
+          <li>
+              <a class=" text-decoration-none" href="./index.html">Home</a>            
+          </li>
+          <li>
+              <div class="dropdown">
+                  <a class="dropdown-toggle  text-decoration-none" href="./new.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">♡ Shop</a>
+                  <ul class="dropdown-menu" id="navDrop">
+                  <li><a class="dropdown-item  text-decoration-none" href="./new.html">new items!</a></li>
+                  <li><a class="dropdown-item  text-decoration-none" href="./keycharms.html">keychains & charms</a></li>
+                  <li><a class="dropdown-item  text-decoration-none" href="./printcards.html">prints & photocards</a></li>
+                  </ul>
+              </div>
+          </li>
+          <li>
+              <div class="dropdown">
+                  <a class="dropdown-toggle  text-decoration-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Collections</a>
+                  <ul class="dropdown-menu" id="navDrop">
+                    <li><a class="dropdown-item  text-decoration-none" href="#">kirbo</a></li>
+                    <li><a class="dropdown-item  text-decoration-none" href="#">sanrii darlings</a></li>
+                    <li><a class="dropdown-item  text-decoration-none" href="#">honkai star rail </a></li>
+                  </ul>
+              </div>  
+              </li>
+              <li>
+              <div class="dropdown">
+                  <a class="dropdown-toggle  text-decoration-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>Info</strong></a>
+                  <ul class="dropdown-menu" id="navDrop">
+                  <li><a class="dropdown-item  text-decoration-none" href="#">about cafhune</a></li>
+                  <li><a class="dropdown-item  text-decoration-none" href="#">shipping info</a></li>
+                  <li><a class="dropdown-item  text-decoration-none" href="#">terms of service</a></li>
+                  </ul>
+              </div>
+              </li>
+              <li class="nav-item">
+              <a class=" text-decoration-none" href="./contact.html">Contact</a>
+              </li>
+          </ul>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+      <div class="d-flex flex-column align-items-center">
+          <a href="#" class="footer-brand mb-3">
+          <img src="./images/footlogo.png" alt="" width="150px" class="img-fluid">
+          </a>
+          <h3 class="mb-3">✶ Sign up for updates!✶ </h3>
+          <form style="max-width: 300px;">
+              <div class="input-group mb-3">
+                  <input type="email" class="form-control" id="email" placeholder="Enter your email" aria-label="Enter your email" aria-describedby="email-addon" style="padding: 1em; border-radius: 5px; border: 1px solid rgba(101, 42, 24, 1);">
+                  <button class="btn btn-outline" type="button" id="email-addon">Sign Up</button>
+              </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <p style="font-size: 0.9rem; font-weight: bold;">Copyright &copy; — Developed by Mirko Joel Alcantara, Jericho James Guanga, Al Jann Jakilan, Juoross Phillip Jose, and Dino Alfred Timbol — 2024</p> 
+    </div>
+
+    </div>
+  </footer>
+
+
+  <!--  Bootsrap JS script links -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <script src="./js/index.js"></script>
+
+    
+</body>
+
+</html>

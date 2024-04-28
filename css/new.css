@@ -241,3 +241,9 @@ footer #shop-links a:hover {
     margin-top: 1em;
     display: block;
 }
+
+@media all and (max-width: 450px) {
+    h1 {
+        font-size: 30px;
+    }
+}
