@@ -7,9 +7,9 @@ h1 {
     color: rgba(101, 42, 24, 1);
 }
 
-
 p {
     color: rgba(101, 42, 24, 1);
+    font-size: 20px;
 }
 
 p a {
@@ -20,7 +20,6 @@ p a {
 .nav-link:hover {
     color:pink !important;
 }
-
 
 .active {
     color: pink !important;
@@ -89,10 +88,6 @@ p a {
     color: red;
 }
 
-.cart-added {
-    background-color: pink;
-    border: none;
-}
 
 .overlay {
     position: fixed;
@@ -128,36 +123,6 @@ p a {
     top: 10px;
     right: 10px;
     cursor: pointer;
-}
-
-.card {
-    overflow: hidden;
-}
-
-.card-img-top {
-    transition: transform 0.3s ease;
-}
-
-.card-img-top:hover {
-    transform: scale(1.05);
-    cursor: pointer;
-}
-
-.card-body {
-    color: rgba(101, 42, 24, 1);
-}
-
-.card-body a {
-    text-decoration: none;
-    color: rgba(101, 42, 24, 1);
-}
-
-.card-body a:hover {
-    text-decoration: underline;
-}
-
-.card-body .btn {
-    margin-top: 3em;
 }
 
 .btn {
@@ -233,6 +198,100 @@ footer #shop-links a:hover {
  
   }
 
+header div {
+    margin: 0em 5em 0em 5em;
+}
+
+.accordion .accordion-item h1 button, .accordion .accordion-item  p {
+    color: rgba(101, 42, 24, 1);
+}
+
+.accordion .accordion-item h1 button {
+    font-size: 24px;
+    
+}
+
+.accordion .accordion-item h1 button:hover {
+    text-decoration: underline;
+}
+ 
+.accordion-header {
+    border: none;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+    margin: 0em 33em 0em 33em; 
+    border: none;
+}
+
+.accordion-collapse {
+    color: rgba(101, 42, 24, 1);
+    transition: height 0.4s ease-out; 
+}
+
+.accordion-button::after {
+    transition: transform 0.3s;
+}
+
+.accordion-button[aria-expanded="true"]::after {
+    transform: rotate(180deg); 
+}
+
+@media all and (max-width: 1500px) {
+    .accordion-item {
+        margin: 0em 16em 0em 16em;
+    }
+
+}
+
+@media all and (max-width: 999px) {
+    .accordion-item {
+        margin: 0em 6em 0em 6em;
+    }
+
+    header h1 {
+        font-size: 40px;
+    }
+
+    header img {
+        width: 300px;
+    }
+
+    header div {
+        margin: 0em;
+    }
+
+    
+
+}
+
+@media (max-width: 576px) { 
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+}
+
+
+@media all and (max-width: 500px) {
+
+    p {
+        color: rgba(101, 42, 24, 1);
+        font-size: 14px;
+    }
+
+    .accordion-item {
+        margin: 0em 3em 0em 3em;
+    }
+
+    .accordion .accordion-item h1 button {
+        font-size: 16px;
+    }
+    
+}
+
 @media all and (max-width: 400px) {
 
     .btn {
@@ -242,19 +301,4 @@ footer #shop-links a:hover {
  
 }
 
-@media (min-width: 576px) {
-    .container {
-      max-width: 400px; 
-    }
-  }
 
-  .add-msg {
-    margin-top: 1em;
-    display: block;
-}
-
-@media all and (max-width: 450px) {
-    h1 {
-        font-size: 30px;
-    }
-}

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>   
+		<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="Content" content="Project: Web Design and Development">
+		<meta name="Page" content="Home Page">
+
+   <!--  Bootstrap stylesheet link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- local CSS stylesheet link -->
+    <link rel="stylesheet" href="./css/about.css">
+
+		<link rel="icon" href="./images/favicon1.png">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+
+    <title>Home</title> 
+    
+</head>
+
+<body>
+
+  <section class="container-fluid p-3" style="background-color: pink;"> <!-- start of HTML for warning section -->
+
+      <h4 class="text-center">✿ Please double check your address at checkout ✿</h4>
+
+  </section>
+  
+
+  <nav class="navbar navbar-expand-lg bg-white py-4 d-flex flex-row justify-content-around">
+    <button id="menu-btn" class="navbar-toggler d-lg-none" type="button" aria-label="Toggle navigation">
+        <span id="icon-menu" class="navbar-toggler-icon"></span>
+    </button>
+
+    <a href="#" class="navbar-brand">
+        <img src="./images/logo.png" alt="" width="400px">
+    </a>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html" id="navName" ><strong>Home</strong></a>            </li>
+            <li>
+              <div class="dropdown">
+                <a id="navName" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>♡ Shop</strong></a>
+                <ul class="dropdown-menu" id="navDrop">
+                  <li><a class="dropdown-item" href="./new.html">new items!</a></li>
+                  <li><a class="dropdown-item" href="./keycharms.html">keychains & charms</a></li>
+                  <li><a class="dropdown-item" href="./printcards.html">prints & photocards</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="dropdown">
+                <a id="navName" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>Collections</strong></a>
+                <ul class="dropdown-menu" id="navDrop">
+                  <li><a class="dropdown-item" href="#">kirbo</a></li>
+                  <li><a class="dropdown-item" href="#">sanrii darlings</a></li>
+                  <li><a class="dropdown-item" href="#">honkai star rail </a></li>
+                </ul>
+              </div>
+              
+            </li>
+            <li>
+              <div class="dropdown">
+                <a id="navName" class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>Info</strong></a>
+                <ul class="dropdown-menu" id="navDrop">
+                  <li><a class="dropdown-item" href="./about.html">about cafhune</a></li>
+                  <li><a class="dropdown-item" href="#">shipping info</a></li>
+                  <li><a class="dropdown-item" href="./tos.html">terms of service</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html" id="navName"><strong>Contact</strong></a>
+            </li>
+        </ul>
+        <div style="position: relative; width: fit-content;">
+          <a href="#">
+              <img src="./images/cart-icon.png" alt="" width="50px">
+          </a>
+          <span class="cart" style="position: absolute; top: -10px; right: -10px; background-color: red; color: white; border-radius: 50%; padding: 5px 10px; font-size: 14px;">0</span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="overlay" id="overlay"></div>
+
+  <div class="sidebar" id="sidebar">
+      <div class="sidebar-content">
+          <div id="sideClose">
+            <span style="color: rgba(101, 42, 24, 1);" class="close-btn p-1"><strong>X CLOSE</strong></span>
+          </div>
+          <h3 style="color: rgba(101, 42, 24, 1)" >Menu</h3>
+          <ul class="list-unstyled">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html" id="navName"><strong>Home</strong></a>            </li>
+            <li>
+              <div class="dropdown">
+                <a id="navName" class="nav-link dropdown-toggle" href="./new.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>♡ Shop</strong></a>
+                <ul class="dropdown-menu" id="navDrop">
+                  <li><a class="dropdown-item" href="./new.html">new items!</a></li>
+                  <li><a class="dropdown-item" href="./keycharms.html">keychains & charms</a></li>
+                  <li><a class="dropdown-item" href="./printcards.html">prints & photocards</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="dropdown">
+                <a id="navName" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>Collections</strong></a>
+                <ul class="dropdown-menu" id="navDrop">
+                  <li><a class="dropdown-item" href="#">kirbo</a></li>
+                  <li><a class="dropdown-item" href="#">sanrii darlings</a></li>
+                  <li><a class="dropdown-item" href="#">honkai star rail </a></li>
+                </ul>
+              </div>  
+            </li>
+            <li>
+              <div class="dropdown">
+                <a id="navName" class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>Info</strong></a>
+                <ul class="dropdown-menu" id="navDrop">
+                  <li><a class="dropdown-item"  href="./about.html">about cafhune</a></li>
+                  <li><a class="dropdown-item" href="#">shipping info</a></li>
+                  <li><a class="dropdown-item" href="./tos.html">terms of service</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html" id="navName"><strong>Contact</strong></a>
+            </li>
+        </ul>
+          <div style="position: relative; width: fit-content;">
+            <a href="#">
+                <img src="./images/cart-icon.png" alt="" width="50px">
+            </a>
+            <span class="cart" style="position: absolute; top: -10px; right: -10px; background-color: red; color: white; border-radius: 50%; padding: 5px 10px; font-size: 14px;">0</span>
+        </div>
+      </div>
+  </div>
+
+  <header class="container d-flex flex-column align-items-center p-5 justify-content-center">
+
+    <img src="./images/logo.png" alt="" width="400px">
+    <div class="p-5 d-flex flex-column">
+      <h1>About Cafhune ♡</h1>
+      <p>
+      <strong>Meet Mari, aka cafhune,</strong>
+      an illustrator from the Philippines. Her works are heavily influenced by cute anime and video games! Fueled by little sweet treats and sudoku puzzles! ✿
+      </p>
+      <p>
+        Cafhune started with hand-cut stickers and button pins at local anime cons to earn a bit more income to help her family. Now, she's selling her artworks independently, working ful-time, and spreading smiles across the globe (and still)!
+      </p>
+      <p>
+        <a href="https://twitter.com/cafhune">twitter</a>
+        ♡
+        <a href="https://www.instagram.com/cafhune_art">instagram</a>
+      </p>
+
+      <p>
+        <a href="https://cafhune.carrd.co/">Cafhune.cardd.co</a>
+      </p>
+      
+    </div>
+   
+  </header>
+  
+  <section class="container-fluid mt-1 pb-5 pt-5" style="background-color: rgb(249, 239, 241);">
+
+    <p class="text-center">GENERAL FREQUENTLY ASKED</p>
+    <h1 class="mb-5 text-center" style="color: rgba(101, 42, 24, 1);">GENERAL ✿ QUESTIONS</h1>
+    <div class="accordion pb-5" id="accordionExample" >
+        <div class="accordion-item" style="background-color: rgb(249, 239, 241);">
+            <h1 class="accordion-header" id="headingOne" >
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" >
+                  ♡ What tools do you use for your work?
+                </button>
+            </h1>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                      <p class="pt-3">
+                        I use Procreate on an iPad Pro 10.2" <br>
+                        VLLO app for video editing. Notion and Google Sheets for organizing.
+                      </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+          <h1 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                ♡ Who's your supplier/s? Where do you get your products made?
+              </button>
+          </h1>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                  <p>
+                    The majority of my products are outsourced and manufactured by small local suppliers here in the Philippines. <strong>#SupportLocal</strong>
+                  </p>
+                  <p>
+                    The rest are either handmade by me or manufactured via Alibaba suppliers. <strong>I do not disclose further details regarding my suppliers.</strong>
+                  </p>
+              </div>
+          </div>
+      </div>
+        <div class="accordion-item">
+            <h1 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  ♡ Will you be restocking X item?
+                </button>
+            </h1>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>
+                      I quickly restock my stickers, button pins, art prints, and keychains ASAP. Some products may take longer but most likely will be available again too.
+                    </p>
+                    <p>
+                      I will not restock items listed as [last chance] or [discontinued]!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h1 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  ♡ Do you do collaborations?
+                </button>
+            </h1>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p> 
+                      I do collaborative merchandise projects friends only. Invited artist for fanzine projects are accepted if it interests me.
+                    </p>
+                    <p>
+                      For sponsorship collaborations, kindly email me at hi.cafhune@gmail.com or message me on <a href="https://www.instagram.com/cafhune_art">instagram</a>. I accept X deals and cash incentives collaborations.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+          <h1 class="accordion-header" id="headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                ♡ Can I resell your products/art works?
+              </button>
+          </h1>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                  <p> 
+                    To resell my official merchandise, it is important to note that it should be presented as a preloved item. Preloved items are those that were originally purchased directly from me but are no longer wanted by the original owner. Ensure that you resell it at a price equal to or lower than the one you initially purchased it for.
+                  </p>
+                  <p>
+                    However, engaging in unauthorized resale, theft of my designs, or selling them on any other store is strictly prohibited. I will take legal actions.
+                  </p>
+              </div>
+          </div>
+      </div>
+    </div>  
+  </section>
+
+  <footer class="container-fluid p-3 p-md-5 align-items-center">
+    <div class="d-flex row justify-content-center justify-content-md-evenly" >
+        <div class="col-lg-3 col-md-6 mb-4" id="cafpost">
+          <h3>Cafhune is 100% Artist Owned & Operated</h3>
+          <p>Hello! It's Cafhune! Thank you for visiting! I love creating cute things and hope my art makes you smile!! ♡ TYSM for making my dreams possible!!!</p>
+
+          <ul class="d-flex flex-row list-unstyled align-items-center justify-content-center">
+            <li style="max-width: 55px;">
+                <a class="text-decoration-none" href="https://www.instagram.com/cafhune_art">
+                    <img src="./images/ig.png" alt="" width="40px">
+                </a>
+            </li>
+            <li style="max-width: 55px;"> 
+                <a class="text-decoration-none" href="https://twitter.com/cafhune">
+                    <img src="./images/x.png" alt="" width="40px">
+                </a>
+            </li>
+            <li style="max-width: 55px;">
+                <a class="text-decoration-none" href="https://ko-fi.com/cafhune">
+                    <img src="./images/ko.png" alt="" width="40px">
+                </a>
+            </li>
+            <li style="max-width: 55px;">
+                <a class="text-decoration-none" href="https://cafhune.carrd.co/">
+                    <img src="./images/card.png" alt="" width="40px">
+                </a>
+            </li>
+        </ul>        
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4" id="caflinks">
+      <ul class="list-unstyled justify-content-center align-self-center" id="shop-links">
+          <h3>Shop ✿ Links</h3>
+          <li>
+              <a class=" text-decoration-none" href="./index.html">Home</a>            
+          </li>
+          <li>
+              <div class="dropdown">
+                  <a class="dropdown-toggle  text-decoration-none" href="./new.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">♡ Shop</a>
+                  <ul class="dropdown-menu" id="navDrop">
+                  <li><a class="dropdown-item  text-decoration-none" href="./new.html">new items!</a></li>
+                  <li><a class="dropdown-item  text-decoration-none" href="./keycharms.html">keychains & charms</a></li>
+                  <li><a class="dropdown-item  text-decoration-none" href="./printcards.html">prints & photocards</a></li>
+                  </ul>
+              </div>
+          </li>
+          <li>
+              <div class="dropdown">
+                  <a class="dropdown-toggle  text-decoration-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Collections</a>
+                  <ul class="dropdown-menu" id="navDrop">
+                    <li><a class="dropdown-item  text-decoration-none" href="#">kirbo</a></li>
+                    <li><a class="dropdown-item  text-decoration-none" href="#">sanrii darlings</a></li>
+                    <li><a class="dropdown-item  text-decoration-none" href="#">honkai star rail </a></li>
+                  </ul>
+              </div>  
+              </li>
+              <li>
+              <div class="dropdown">
+                  <a class="dropdown-toggle  text-decoration-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Info</a>
+                  <ul class="dropdown-menu" id="navDrop">
+                  <li><a class="dropdown-item  text-decoration-none"  href="./about.html">about cafhune</a></li>
+                  <li><a class="dropdown-item  text-decoration-none" href="#">shipping info</a></li>
+                  <li><a class="dropdown-item  text-decoration-none" href="./tos.html">terms of service</a></li>
+                  </ul>
+              </div>
+              </li>
+              <li class="nav-item">
+              <a class=" text-decoration-none" href="./contact.html">Contact</a>
+              </li>
+          </ul>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+      <div class="d-flex flex-column align-items-center">
+          <a href="#" class="footer-brand mb-3">
+          <img src="./images/footlogo.png" alt="" width="150px" class="img-fluid">
+          </a>
+          <h3 class="mb-3">✶ Sign up for updates!✶ </h3>
+          <form style="max-width: 300px;">
+              <div class="input-group mb-3">
+                  <input type="email" class="form-control" id="email" placeholder="Enter your email" aria-label="Enter your email" aria-describedby="email-addon" style="padding: 1em; border-radius: 5px; border: 1px solid rgba(101, 42, 24, 1);">
+                  <button class="btn btn-outline" type="button" id="email-addon">Sign Up</button>
+              </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <p style="font-size: 0.9rem; font-weight: bold;">Copyright &copy; — Developed by Mirko Joel Alcantara, Jericho James Guanga, Al Jann Jakilan, Juoross Phillip Jose, and Dino Alfred Timbol — 2024</p> 
+    </div>
+
+    </div>
+  </footer>
+
+
+  <!--  Bootsrap JS script links -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <script src="./js/about.js"></script>
+
+    
+</body>
+
+</html>

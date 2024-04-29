@@ -2,6 +2,18 @@ body {
     font-family: 'Open Sans', 'montserrat';
 }
 
+h1 {
+    color: rgba(101, 42, 24, 1);
+}
+
+p {
+    color: rgba(101, 42, 24, 1);
+}
+
+p a {
+    text-decoration: underline;
+    color: rgba(101, 42, 24, 1);
+}
 
 .nav-link:hover {
     color:pink !important;
@@ -199,6 +211,7 @@ footer #shop-links a:hover {
     background-color: #fff;
     border-radius: 10px;
     padding: 20px;
+    
 }
 
 .form-container {
@@ -206,7 +219,7 @@ footer #shop-links a:hover {
     border-radius: 10px;
     padding: 10px;
     margin: 20px auto;
-    max-width: 900px;
+    max-width: 750px;
 }
 
 .form-container p {
