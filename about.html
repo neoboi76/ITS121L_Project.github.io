@@ -23,13 +23,16 @@
 
 <body>
 
-  <section class="container-fluid p-3" style="background-color: pink;"> <!-- start of HTML for warning section -->
+  <!-- Start of HTML for the warning section -->
+  <section class="container-fluid p-3" style="background-color: pink;"> 
 
       <h4 class="text-center">✿ Please double check your address at checkout ✿</h4>
 
   </section>
+  <!-- End of HTML for the warning section -->
   
 
+  <!-- Start of HTML for the navigation bar -->
   <nav class="navbar navbar-expand-lg bg-white py-4 d-flex flex-row justify-content-around">
     <button id="menu-btn" class="navbar-toggler d-lg-none" type="button" aria-label="Toggle navigation">
         <span id="icon-menu" class="navbar-toggler-icon"></span>
@@ -86,7 +89,9 @@
       </div>
     </div>
   </nav>
+  <!-- End of HTML for the navigation bar -->
 
+  <!-- Start of HTML for the side menu -->
   <div class="overlay" id="overlay"></div>
 
   <div class="sidebar" id="sidebar">
@@ -140,7 +145,9 @@
         </div>
       </div>
   </div>
+  <!-- End of HTML for the side menu -->
 
+  <!-- Start of HTML for the header -->
   <header class="container d-flex flex-column align-items-center p-5 justify-content-center">
 
     <img src="./images/logo.png" alt="" width="400px">
@@ -166,7 +173,9 @@
     </div>
    
   </header>
+  <!-- End of HTML for the header -->
   
+  <!-- Start of HTML for the General Questions section -->
   <section class="container-fluid mt-1 pb-5 pt-5" style="background-color: rgb(249, 239, 241);">
 
     <p class="text-center">GENERAL FREQUENTLY ASKED</p>
@@ -257,7 +266,9 @@
       </div>
     </div>  
   </section>
+  <!-- End of HTML for the General Questions section -->
 
+  <!-- Start of HTML for the Floorplan section -->
   <section class="container-fluid flrp-container mb-5">
     <div class="row">
         <div class="col text-center">
@@ -279,29 +290,10 @@
             </div>
         </div>
     </div>
-</section>
+  </section>
+  <!-- End of HTML for the Floorplan section -->
 
-
-<style>
-  .flrp-container {
-    padding-top: 20px;
-}
-
-#head {
-    color: rgba(101, 42, 24, 1);
-}
-
-.image-container {
-    margin-top: 20px;
-}
-
-@media (max-width: 576px) { /* Extra small devices (phones, 576px and down) */
-    #head {
-        font-size: 1.5rem;
-    }
-}
-</style>
-
+  <!-- Start of HTML for the footer -->
   <footer class="container-fluid p-3 p-md-5 align-items-center">
     <div class="d-flex row justify-content-center justify-content-md-evenly" >
         <div class="col-lg-3 col-md-6 mb-4" id="cafpost">
@@ -393,12 +385,13 @@
 
     </div>
   </footer>
+  <!-- End of HTML for the footer -->
 
 
   <!--  Bootsrap JS script links -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-  <script src="./js/about.js"></script>
+  <script src="./js/info.js"></script>
 
     
 </body>

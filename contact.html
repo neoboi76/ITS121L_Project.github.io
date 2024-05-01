@@ -23,13 +23,15 @@
 
 <body>
 
-  <section class="container-fluid p-3" style="background-color: pink;"> <!-- start of HTML for warning section -->
+  <!-- Start of HTML for the warning section -->
+  <section class="container-fluid p-3" style="background-color: pink;"> 
 
-      <h4 class="text-center">✿ Please double check your address at checkout ✿</h4>
+    <h4 class="text-center">✿ Please double check your address at checkout ✿</h4>
 
   </section>
+  <!-- End of HTML for the warning section -->
   
-
+  <!-- Start of HTML for the navigation bar -->
   <nav class="navbar navbar-expand-lg bg-white py-4 d-flex flex-row justify-content-around">
     <button id="menu-btn" class="navbar-toggler d-lg-none" type="button" aria-label="Toggle navigation">
         <span id="icon-menu" class="navbar-toggler-icon"></span>
@@ -86,7 +88,9 @@
       </div>
     </div>
   </nav>
+  <!-- End of HTML for the navigation bar -->
 
+  <!-- Start of HTML for the side menu -->
   <div class="overlay" id="overlay"></div>
 
   <div class="sidebar" id="sidebar">
@@ -140,38 +144,40 @@
         </div>
       </div>
   </div>
+  <!-- End of HTML for the side menu -->
 
+  <!-- Start of HTML for the forms section -->
+  <section class="form-container">
+      <div class="form-proper">
+          <h1 class="mb-5" >Contact Us</h1>
+          <p>Before sending a message, please check our <a href="./shipping.html">Shipping</a>, <a href="./tos.html">Terms of Service</a>, and <a href="./about.html">About Me</a> pages!</p>
+          <p class="mb-5" >Customer service operates from Monday to Friday and is closed on holidays. Please include your order number when filling out the form below. Thank you for your patience!</p>
+          <form method="post" action="mailto:dattimbol@mymail.mapua.edu.ph">
+              <fieldset>
+                  <legend>Personal Information</legend>
+                  <div class="mb-4" >
+                      <input type="text" name="name" class="form-control" maxlength="50" autocomplete="on" placeholder="Name">
+                  </div>
+                  <div class="mb-4">
+                      <input type="email" name="username" class="form-control" maxlength="50" autocomplete="on" placeholder="Email *">
+                  </div>
+                  <div class="mb-4">
+                      <input type="tel" name="phone" class="form-control" maxlength="20" autocomplete="on" placeholder="Phone number">
+                  </div>
+                  <div class="mb-4">
+                      <textarea id="misc" class="form-control" rows="5" placeholder="Comment"></textarea>
+                  </div>
+              </fieldset>
+              
+              <div>
+                  <button type="submit" style="width: 35%; border: 1px solid red;" class="btn btn-outline">Send</button>
+              </div>
+          </form>
+      </div>
+  </section>
+  <!-- End of HTML for the forms section -->
 
-    <section class="form-container">
-        <div class="form-proper">
-            <h1 class="mb-5" >Contact Us</h1>
-            <p>Before sending a message, please check our <a href="./shipping.html">Shipping</a>, <a href="./tos.html">Terms of Service</a>, and <a href="./about.html">About Me</a> pages!</p>
-            <p class="mb-5" >Customer service operates from Monday to Friday and is closed on holidays. Please include your order number when filling out the form below. Thank you for your patience!</p>
-            <form method="post" action="mailto:dattimbol@mymail.mapua.edu.ph">
-                <fieldset>
-                    <legend>Personal Information</legend>
-                    <div class="mb-4" >
-                        <input type="text" name="name" class="form-control" maxlength="50" autocomplete="on" placeholder="Name">
-                    </div>
-                    <div class="mb-4">
-                        <input type="email" name="username" class="form-control" maxlength="50" autocomplete="on" placeholder="Email *">
-                    </div>
-                    <div class="mb-4">
-                        <input type="tel" name="phone" class="form-control" maxlength="20" autocomplete="on" placeholder="Phone number">
-                    </div>
-                    <div class="mb-4">
-                        <textarea id="misc" class="form-control" rows="5" placeholder="Comment"></textarea>
-                    </div>
-                </fieldset>
-                
-                <div>
-                    <button type="submit" style="width: 35%; border: 1px solid red;" class="btn btn-outline">Send</button>
-                </div>
-            </form>
-        </div>
-    </section>
-
- 
+  <!-- Start of HTML for the footer -->
   <footer class="container-fluid p-3 p-md-5 align-items-center">
     <div class="d-flex row justify-content-center justify-content-md-evenly" >
         <div class="col-lg-3 col-md-6 mb-4" id="cafpost">
@@ -263,6 +269,7 @@
 
     </div>
   </footer>
+  <!-- End of HTML for the footer -->
 
 
   <!--  Bootsrap JS script links -->

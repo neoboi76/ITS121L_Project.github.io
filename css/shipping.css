@@ -1,3 +1,5 @@
+/* Start of styles for general tags  */
+
 body {
     font-family: 'Open Sans', 'montserrat';
 }
@@ -17,6 +19,10 @@ p a {
     color: rgba(101, 42, 24, 1);
 }
 
+/* End of styles for general tags */
+
+/* Start of styles for navigation bar */
+
 .nav-link:hover {
     color:pink !important;
 }
@@ -24,14 +30,6 @@ p a {
 .active {
     color: pink !important;
     border-bottom: 3px solid pink;
-}
-
-@media all and (max-width: 500px) {
-
-    .navbar-brand img {
-        width: 250px;
-    }
-
 }
 
 .dropdown-menu {
@@ -53,18 +51,12 @@ p a {
     }
 }
 
-#search-form {
-  width: 300px;
-}
-
-
 #navDrop li a, #navName {
 
     color: rgba(101, 42, 24, 1);
     font-size: 20px;
     font-weight: bold;
 }
-
 
 .navbar-collapse {
     flex-grow: 0;
@@ -75,19 +67,13 @@ p a {
     gap: 0.5em;
   }
 
-  .nav-item {
+.nav-item {
     padding: 0 15px;
-  }
-
-.btn:hover {
-    background-color: pink;
-    cursor: pointer;
 }
 
-.close-btn:hover {
-    color: red;
-}
+/* End of styles for navigation bar */
 
+/* Start of styles for side menu */
 
 .overlay {
     position: fixed;
@@ -95,21 +81,21 @@ p a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
-    z-index: 999; /* Ensure it's on top */
-    display: none; /* Initially hidden */
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 999;
+    display: none; 
 }
-/* Menu styles */
+
 .sidebar {
     position: fixed;
     top: 0;
-    left: -300px; /* Initially hidden to the left */
+    left: -300px; 
     width: 300px;
     height: 100%;
     background-color: #fff;
-    z-index: 1000; /* Ensure it's on top of the overlay */
+    z-index: 1000; 
     transition: left 0.3s ease;
-    overflow-y: auto; /* Allow vertical scrolling within menu */
+    overflow-y: auto; 
 }
 .sidebar.active {
     left: 0;
@@ -125,6 +111,84 @@ p a {
     cursor: pointer;
 }
 
+body.menu-open {
+    overflow: hidden;
+}
+
+
+/* End of styles for side menu */
+
+/* Start of styles for dropdown paragraphs */
+
+header div {
+    margin: 0em 5em 0em 5em;
+}
+
+.accordion .accordion-item h1 button, .accordion .accordion-item  p {
+    color: rgba(101, 42, 24, 1);
+}
+
+.accordion .accordion-item h1 button {
+    font-size: 24px;
+    background-color: rgb(249, 239, 241);
+}
+
+.accordion .accordion-item h1 button:hover {
+    text-decoration: underline;
+}
+ 
+.accordion-header {
+    border: none;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+    margin: 0em 33em 0em 33em; 
+    border: none;
+    background-color: rgb(249, 239, 241);
+}
+
+.accordion-collapse {
+    color: rgba(101, 42, 24, 1);
+    transition: height 0.4s ease-out; 
+}
+
+.accordion-button::after {
+    transition: transform 0.3s;
+}
+
+.accordion-button[aria-expanded="true"]::after {
+    transform: rotate(180deg); 
+}
+
+/* End of styles for dropdown paragraphs */
+
+/* Start of styles for shipping table */
+
+.accordion-body {
+    background-color: white;
+}
+
+.shipping-table {
+    width: 100%; 
+    border-collapse: collapse; 
+}
+
+.shipping-table th,
+.shipping-table td {
+    border: 1px solid rgba(101, 42, 24, 1); 
+    padding: 12px; 
+    text-align: left; 
+}
+.shipping-table thead th {
+    background-color: #f2f2f2; 
+    font-weight: bold; 
+}
+
+/* End of styles for shipping table */
+
+/* Start of styles for buttons */
+
 .btn {
     margin-left: 0.3em;
     margin-top: 1em;
@@ -137,10 +201,10 @@ p a {
     transition: all 0.3s;
 }
 
+/* End of styles for buttons */
 
-body.menu-open {
-    overflow: hidden;
-}
+
+/* Start of styles for miscellaneous classes */
 
 #others a {
     text-decoration: none;
@@ -154,6 +218,10 @@ body.menu-open {
 .list-unstyled li {
     padding: 0.5em;
 }
+
+/* End of styles for miscellaneous classes */
+
+/* Start of styles for the footer */
 
 footer {
     color: rgba(101, 42, 24, 1);
@@ -177,81 +245,9 @@ footer #shop-links a:hover {
 
 }
 
-@media (max-width: 769px) {
-    #cafpost, #caflinks{ 
-      width: 50%;
-      flex-flow: row;
-      align-items: center;
-      justify-content: center;
-      align-self: center;
-    }
- 
-  }
+/* End of styles for the footer */
 
-  @media (max-width: 600px) {
-    #cafpost, #caflinks{ 
-      flex-flow: column;
-      width: 80%;
-      align-items: center;
-  
-    }
- 
-  }
-
-header div {
-    margin: 0em 5em 0em 5em;
-}
-
-.accordion .accordion-item h1 button, .accordion .accordion-item  p {
-    color: rgba(101, 42, 24, 1);
-}
-
-.accordion .accordion-item h1 button {
-    font-size: 24px;
-    
-}
-
-.accordion .accordion-item h1 button:hover {
-    text-decoration: underline;
-}
- 
-.accordion-header {
-    border: none;
-}
-
-.accordion-item {
-    margin-bottom: 10px;
-    margin: 0em 33em 0em 33em; 
-    border: none;
-}
-
-.accordion-collapse {
-    color: rgba(101, 42, 24, 1);
-    transition: height 0.4s ease-out; 
-}
-
-.accordion-button::after {
-    transition: transform 0.3s;
-}
-
-.accordion-button[aria-expanded="true"]::after {
-    transform: rotate(180deg); 
-}
-
-.shipping-table {
-    width: 100%; 
-    border-collapse: collapse; 
-}
-.shipping-table th,
-.shipping-table td {
-    border: 1px solid rgba(101, 42, 24, 1); 
-    padding: 12px; 
-    text-align: left; 
-}
-.shipping-table thead th {
-    background-color: #f2f2f2; 
-    font-weight: bold; 
-}
+/* Start of styles for CSS Media Queries (for Website responsiveness) */
 
 @media all and (max-width: 1500px) {
     .accordion-item {
@@ -262,7 +258,7 @@ header div {
 
 @media all and (max-width: 999px) {
     .accordion-item {
-        margin: 2em;
+        margin: 0em 6em 0em 6em;
     }
 
     header h1 {
@@ -276,31 +272,26 @@ header div {
     header div {
         margin: 0em;
     }
-    .shipping-table {
-        font-size: 0.7rem; 
-    }
+
+    
+
 }
 
-@media all and (max-width: 768px) {
-    .shipping-table {
-        font-size: 0.5rem;
+@media all and (max-width: 500px) {
+
+    .navbar-brand img {
+        width: 250px;
     }
+
 }
 
-@media all and (max-width: 576px) { 
+@media (max-width: 576px) { 
     .container {
         padding-left: 15px;
         padding-right: 15px;
     }
 
 }
-
-@media (max-width: 576px) {
-  
-    .shipping-table {
-      font-size: 0.8rem; 
-    }
-  }
 
 
 @media all and (max-width: 500px) {
@@ -328,5 +319,99 @@ header div {
     }
  
 }
+
+@media all and (max-width: 1200px) {
+    #cafpost, #caflinks{ 
+      width: 50%;
+      flex-flow: row;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+    }
+ 
+  }
+
+@media all and (max-width: 769px) {
+    #cafpost, #caflinks{ 
+      width: 50%;
+      flex-flow: row;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+    }
+ 
+  }
+
+  @media all and (max-width: 600px) {
+    #cafpost, #caflinks{ 
+      flex-flow: column;
+      width: 90%;
+      align-items: center;
+  
+    }
+ 
+  }
+
+@media all and (max-width: 500px) {
+
+    .navbar-brand img {
+        width: 250px;
+    }
+
+}
+
+  @media all and (max-width: 460px) {
+    #caflinks{ 
+      flex-flow: column;
+      width: 100%;
+      align-items: center;
+      margin-right: 3.5em;
+    }
+
+    #cafpost {
+        margin-left: 0.5em;
+    }
+ 
+  }
+
+@media all and (max-width: 400px) {
+
+    .btn {
+        width: 100%;
+        padding: 0.6em 1.5em 0.6em 1.5em;
+    }
+ 
+}
+
+
+@media all and (max-width: 450px) {
+    h1 {
+        font-size: 30px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .shipping-table {
+        font-size: 0.5rem;
+    }
+}
+
+@media all and (max-width: 576px) { 
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+}
+
+@media (max-width: 576px) {
+  
+    .shipping-table {
+      font-size: 0.8rem; 
+    }
+  }
+
+/* End of styles for CSS Media Queries (for Website responsiveness) */
+
 
 

@@ -1,16 +1,16 @@
-/*  document.getElementById('search-btn').addEventListener('click', function () {
-  document.getElementById('search-form').style.display = 'block';
-}); */
-
-
+/* Declarations */
 const menuBtn = document.getElementById('menu-btn');
 const sidebar = document.getElementById('sidebar');
 const overlay = document.getElementById('overlay');
 let sideClose = document.getElementById('sideClose');
 
+
+
+/* Add to cart functionality */
 document.querySelectorAll('.cart-btn').forEach((cartBtn) => {
 
   let timeoutId;
+
 
   cartBtn.addEventListener('click', function() {
 
@@ -24,10 +24,10 @@ document.querySelectorAll('.cart-btn').forEach((cartBtn) => {
          
           document.querySelectorAll('.cart').forEach((cart) => {
             let cartNum = productCard.querySelector('.items');
-            cart.innerText = parseInt(cart.innerText) + parseInt(cartNum.value);
+            cart.innerText = parseInt(cart.innerText) + parseInt(cartNum.value)
+            let cartText = cart.innerText;
           })
       }
-
 
       timeoutId = setTimeout(() => {
           if (addMsg) {
@@ -39,7 +39,7 @@ document.querySelectorAll('.cart-btn').forEach((cartBtn) => {
 
 });
 
-/* Opens menu */
+/* Opens sidemenu */
 menuBtn.addEventListener('click', () => {
     sidebar.classList.toggle('active');
     overlay.style.display = sidebar.classList.contains('active') ? 'block' : 'none';
@@ -48,7 +48,7 @@ menuBtn.addEventListener('click', () => {
 });
 
 
-/* Closes menu */
+/* Closes sidemenu */
 sideClose.addEventListener('click', () => {
     sidebar.classList.remove('active');
     overlay.style.display = 'none';
