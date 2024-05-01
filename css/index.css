@@ -130,6 +130,7 @@ p a {
 
 .card {
     overflow: hidden;
+    box-shadow: 10px 10px 8px #888888;
 }
 
 .card-img-top {
@@ -156,6 +157,25 @@ p a {
 
 .card-body .btn {
     margin-top: 3em;
+}
+
+.carousel-item {
+    transition: all 0.4s;
+}
+
+.modal, .model-content, .modal-header, .modal-body  {
+    animation: lightUp 0.5s;
+}
+
+@keyframes lightUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 10%, 0);
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .btn {
@@ -257,3 +277,4 @@ footer #shop-links a:hover {
         font-size: 30px;
     }
 }
+

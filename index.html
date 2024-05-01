@@ -97,7 +97,8 @@
           <h3 style="color: rgba(101, 42, 24, 1)" >Menu</h3>
           <ul class="list-unstyled">
             <li class="nav-item">
-              <a class="nav-link active" href="./index.html" id="navName"><strong>Home</strong></a>            </li>
+              <a class="nav-link active" href="./index.html" id="navName"><strong>Home</strong></a>            
+            </li>
             <li>
               <div class="dropdown">
                 <a id="navName" class="nav-link dropdown-toggle" href="./new.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>♡ Shop</strong></a>
@@ -131,7 +132,7 @@
             <li class="nav-item">
               <a class="nav-link" href="./contact.html" id="navName"><strong>Contact</strong></a>
             </li>
-        </ul>
+          </ul>
           <div style="position: relative; width: fit-content;">
             <a href="#">
                 <img src="./images/cart-icon.png" alt="" width="50px">
@@ -168,7 +169,7 @@
             <!-- Product cards -->
             <td class="col">
                 <div class="card h-100">
-                    <a href=""><img src="./images/new1.jpg" class="card-img-top" alt="..."></a>
+                    <a href="#" class="thumbnail-link" data-bs-toggle="modal" data-bs-target="#lightboxModal1"><img src="./images/new1.jpg" class="card-img-top" alt="..."></a>
                     <div class="card-body">
                         <a href="">
                             <h5 class="card-title">Genshin Phone Charms ♡ Fontaine</h5>
@@ -184,9 +185,39 @@
                     </div>
                 </div>
             </td>
+            <!-- Lightbox Modal -->
+            <div class="modal fade" id="lightboxModal1" tabindex="-1" aria-labelledby="Modal1" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                          <div id="lightboxCarousel1" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                              <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                      <img src="./images/new1.jpg" class="d-block w-100" alt="Genshin Phone Charms ♡ Fontaine">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img src="./images/new5.1.jpg" class="d-block w-100" alt="Genshin Phone Charms ♡ Fontaine">
+                                  </div>
+                              </div>
+                              <button class="carousel-control-prev" type="button" data-bs-target="#lightboxCarousel1" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#lightboxCarousel1" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
             <td class="col">
                 <div class="card h-100">
-                    <a href="">
+                    <a href="#" class="thumbnail-link" data-bs-toggle="modal" data-bs-target="#lightboxModal2">
                       <img src="./images/new2.jpg" class="card-img-top" alt="...">
                     </a>
                     <div class="card-body">
@@ -204,9 +235,39 @@
                     </div>
                 </div>
             </td>
+            <!-- Lightbox Modal -->
+            <div class="modal fade" id="lightboxModal2" tabindex="-1" aria-labelledby="Modal2" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                          <div id="lightboxCarousel2" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                              <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                      <img src="./images/new2.jpg" class="d-block w-100" alt="Genshin Phone Charms ♡ Fontaine">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./images/new2.1.jpg" class="d-block w-100" alt="Genshin Phone Charms ♡ Fontaine">
+                                </div>
+                              </div>
+                              <button class="carousel-control-prev" type="button" data-bs-target="#lightboxCarousel2" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#lightboxCarousel2" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
             <td class="col">
                 <div class="card h-100">
-                    <a href=""><img src="./images/new3.jpg" class="card-img-top" alt="..."></a>
+                    <a href="#" class="thumbnail-link" data-bs-toggle="modal" data-bs-target="#lightboxModal3"><img src="./images/new3.jpg" class="card-img-top" alt="..."></a>
                     <div class="card-body">
                         <a href="">
                             <h5 class="card-title">Honkai SR Phone Charms</h5>
@@ -222,9 +283,39 @@
                     </div>
                 </div>
             </td>
+            <!-- Lightbox Modal -->
+            <div class="modal fade" id="lightboxModal3" tabindex="-1" aria-labelledby="Modal3" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                          <div id="lightboxCarousel3" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                              <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                      <img src="./images/new3.jpg" class="d-block w-100" alt="Genshin Phone Charms ♡ Fontaine">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img src="./images/new3.1.jpg" class="d-block w-100" alt="Genshin Phone Charms ♡ Fontaine">
+                                  </div>
+                              </div>
+                              <button class="carousel-control-prev" type="button" data-bs-target="#lightboxCarousel3" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#lightboxCarousel3" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
             <td class="col">
                 <div class="card h-100">
-                    <a href=""><img src="./images/new4.png" class="card-img-top" alt="..."></a>
+                    <a href="#" class="thumbnail-link" data-bs-toggle="modal" data-bs-target="#lightboxModal4"><img src="./images/new4.png" class="card-img-top" alt="..."></a>
                     <div class="card-body">
                         <a href="">
                             <h5 class="card-title">Acryilic Toploader ♡ Darling Photo Frame</h5>
@@ -240,83 +331,221 @@
                     </div>
                 </div>
             </td>
+            <!-- Lightbox Modal -->
+            <div class="modal fade" id="lightboxModal4" tabindex="-1" aria-labelledby="Modal4" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                          <div id="lightboxCarousel4" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                              <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                      <img src="./images/new4.png" class="d-block w-100" alt="Genshin Phone Charms ♡ Fontaine">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img src="./images/new4.1.png" class="d-block w-100" alt="Genshin Phone Charms ♡ Fontaine">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./images/new4.2.png" class="d-block w-100" alt="Genshin Phone Charms ♡ Fontaine">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="./images/new4.3.png" class="d-block w-100" alt="Genshin Phone Charms ♡ Fontaine">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./images/new4.4.png" class="d-block w-100" alt="Genshin Phone Charms ♡ Fontaine">
+                            </div>
+                              </div>
+                              <button class="carousel-control-prev" type="button" data-bs-target="#lightboxCarousel4" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#lightboxCarousel4" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
         </tr>
         <tr class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3" style="margin: 0em 4em 1em 4em;">
-            <!-- Product cards -->
-            <td class="col">
-                <div class="card h-100">
-                    <a href=""><img src="./images/new5.jpg" class="card-img-top" alt="..."></a>
-                    <div class="card-body">
-                        <a href="">
-                            <h5 class="card-title">Genshin Phone Charms ♡ Fontaine</h5>
-                        </a>
-                        <p class="card-text">$11.00 USD</p>
-                        <select name="items" class="items" style="border: 1px solid rgba(101, 42, 24, 1); color: rgba(101, 42, 24, 1);;">
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                        </select>
-                        <span class="add-msg"></span>
-                        <button class="btn cart-btn">Add To Cart</button>
+          <!-- Product cards -->
+          <td class="col">
+            <div class="card h-100">
+                <a href="#" class="thumbnail-link" data-bs-toggle="modal" data-bs-target="#lightboxModal5">
+                    <img src="./images/new5.jpg" class="card-img-top" alt="Genshin Phone Charms ♡ Fontaine">
+                </a>
+                <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Genshin Phone Charms ♡ Fontaine</h5>
+                    </a>
+                    <p class="card-text">$11.00 USD</p>
+                    <select name="items" class="items" style="border: 1px solid rgba(101, 42, 24, 1); color: rgba(101, 42, 24, 1);">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    <span class="add-msg"></span>
+                    <button class="btn cart-btn">Add To Cart</button>
+                </div>
+            </div>
+        </td>
+        <!-- Lightbox Modal -->
+        <div class="modal fade" id="lightboxModal5" tabindex="-1" aria-labelledby="Modal5" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="lightboxCarousel5" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./images/new5.jpg" class="d-block w-100" alt="Genshin Phone Charms ♡ Fontaine">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/new5.1.jpg" class="d-block w-100" alt="Genshin Phone Charms ♡ Fontaine">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#lightboxCarousel5" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#lightboxCarousel5" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </td>
-            <td class="col">
-                <div class="card h-100">
-                    <a href=""><img src="./images/new6.jpg" class="card-img-top" alt="..."></a>
-                    <div class="card-body">
-                            <a href="">
-                                <h5 class="card-title">Genshin Phone Charms ♡ Fontaine Mondstadt & Liyue</h5>
-                            </a>
-                            <p class="card-text">$11.00 USD</p>
-                            <select name="items" class="items" style="border: 1px solid rgba(101, 42, 24, 1); color: rgba(101, 42, 24, 1);;">
-                              <option value="1">1</option>
-                              <option value="2">2</option>
-                              <option value="3">3</option>
-                            </select>
-                            <span class="add-msg"></span>
-                        <button class="btn cart-btn">Add To Cart</button>
+            </div>
+          </div>  
+          <td class="col">
+              <div class="card h-100">
+                  <a href="#" class="thumbnail-link" data-bs-toggle="modal" data-bs-target="#lightboxModal6"><img src="./images/new6.jpg" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                          <a href="">
+                              <h5 class="card-title">Genshin Phone Charms ♡ Fontaine Mondstadt & Liyue</h5>
+                          </a>
+                          <p class="card-text">$11.00 USD</p>
+                          <select name="items" class="items" style="border: 1px solid rgba(101, 42, 24, 1); color: rgba(101, 42, 24, 1);;">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                          </select>
+                          <span class="add-msg"></span>
+                      <button class="btn cart-btn">Add To Cart</button>
+                  </div>
+              </div>
+          </td>
+          <!-- Lightbox Modal -->
+          <div class="modal fade" id="lightboxModal6" tabindex="-1" aria-labelledby="Modal6" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="lightboxCarousel6" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./images/new6.jpg" class="d-block w-100" alt="Genshin Phone Charms ♡ Fontaine">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </td>
-            <td class="col">
-                <div class="card h-100">
-                    
-                  <a href=""><img src="./images/new7.jpg" class="card-img-top" alt="..."></a>
-                    <div class="card-body">
-                        <a href="">
-                            <h5 class="card-title">Honkai SR Phone Charms</h5>
-                        </a>
-                        <p class="card-text">$11.00 USD</p>
-                        <select name="items" class="items" style="border: 1px solid rgba(101, 42, 24, 1); color: rgba(101, 42, 24, 1);;">
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                        </select>
-                        <span class="add-msg"></span>
-                        <button class="btn cart-btn">Add To Cart</button>
+            </div>
+          </div>
+          <td class="col">
+              <div class="card h-100">
+                <a href="#" class="thumbnail-link" data-bs-toggle="modal" data-bs-target="#lightboxModal7"><img src="./images/new7.jpg" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                      <a href="">
+                          <h5 class="card-title">Honkai SR Phone Charms</h5>
+                      </a>
+                      <p class="card-text">$11.00 USD</p>
+                      <select name="items" class="items" style="border: 1px solid rgba(101, 42, 24, 1); color: rgba(101, 42, 24, 1);;">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                      <span class="add-msg"></span>
+                      <button class="btn cart-btn">Add To Cart</button>
+                  </div>
+              </div>
+          </td>
+          <!-- Lightbox Modal -->
+          <div class="modal fade" id="lightboxModal7" tabindex="-1" aria-labelledby="Modal7" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="lightboxCarousel7" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./images/new7.jpg" class="d-block w-100" alt="Genshin Phone Charms ♡ Fontaine">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/new7.1.jpg" class="d-block w-100" alt="Genshin Phone Charms ♡ Fontaine">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#lightboxCarousel7" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#lightboxCarousel7" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </td>
-            <td class="col">
-                <div class="card h-100">
-                    <a href=""><img src="./images/new8.jpg" class="card-img-top" alt="..."></a>
-                    <div class="card-body">
-                        <a href="">
-                            <h5 class="card-title">Acryilic Toploader ♡ Darling Photo Frame</h5>
-                        </a>
-                        <p class="card-text">$15.00 USD</p>
-                        <select name="items" class="items" style="border: 1px solid rgba(101, 42, 24, 1); color: rgba(101, 42, 24, 1);;">
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                        </select>
-                        <span class="add-msg"></span>
-                        <button class="btn cart-btn">Add To Cart</button>
-                    </div>
+            </div>
+          </div>
+          <td class="col">
+            <div class="card h-100">
+                <a href="#" class="thumbnail-link" data-bs-toggle="modal" data-bs-target="#lightboxModal8"><img src="./images/new8.jpg" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <a href="">
+                        <h5 class="card-title">Acryilic Toploader ♡ Darling Photo Frame</h5>
+                    </a>
+                    <p class="card-text">$15.00 USD</p>
+                    <select name="items" class="items" style="border: 1px solid rgba(101, 42, 24, 1); color: rgba(101, 42, 24, 1);;">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                    </select>
+                    <span class="add-msg"></span>
+                    <button class="btn cart-btn">Add To Cart</button>
                 </div>
-            </td>
-        </tr>
+            </div>
+        </td>
+        <!-- Lightbox Modal -->
+        <div class="modal fade" id="lightboxModal8" tabindex="-1" aria-labelledby="Modal8" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                      <div id="lightboxCarousel8" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                          <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                  <img src="./images/new8.jpg" class="d-block w-100" alt="Genshin Phone Charms ♡ Fontaine">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </tr>
     </table>
     <div class="text-center">
         <a href="./new.html" class="text-decoration-underline" style="color: rgba(101, 42, 24, 1);">View all</a>
@@ -329,34 +558,34 @@
             <!-- Product cards -->
             <td class="col">
                 <div class="card" style="background-color: rgb(247, 236, 238);">
-                    <a href=""><img src="./images/homecollect1.png" class="card-img-top" alt="..."></a>
+                    <a href="./keycharms.html"><img src="./images/homecollect1.png" class="card-img-top" alt="..."></a>
                 </div>
                 <div class="mt-2" id="others">
-                    <a href=""><h3 ml>originals →</h3></a>
+                    <a href="./keycharms.html"><h3 ml>originals →</h3></a>
                 </div>
             </td>
             <td class="col">
                 <div class="card" style="background-color: rgb(247, 236, 238);">
-                    <a href=""><img src="./images/homecollect2.jpg" class="card-img-top" alt="..."></a>
+                    <a href="./kirbo.html"><img src="./images/homecollect2.jpg" class="card-img-top" alt="..."></a>
                 </div>
                 <div class="mt-2" id="others">
-                    <a href=""><h3>kirbo →</h3></a>
+                    <a href="./kirbo.html"><h3>kirbo →</h3></a>
                 </div>
             </td>
             <td class="col">
                 <div class="card" style="background-color: rgb(247, 236, 238);">
-                    <a href=""><img src="./images/homecollect3.jpg" class="card-img-top" alt="..."></a>
+                    <a href="./honkai.html"><img src="./images/homecollect3.jpg" class="card-img-top" alt="..."></a>
                 </div>
                 <div class="mt-2" id="others">
-                    <a href=""><h3>honkai star rail →</h3></a>
+                    <a href="./honkai.html"><h3>honkai star rail →</h3></a>
                 </div>
             </td>
             <td class="col">
                 <div class="card" style="background-color: rgb(247, 236, 238);">
-                    <a href=""><img src="./images/homecollect4.jpg" class="card-img-top" alt="..."></a>
+                    <a href="./sanrii.html"><img src="./images/homecollect4.jpg" class="card-img-top" alt="..."></a>
                 </div>
                 <div class="mt-2" id="others">
-                    <a href=""><h3>sanrii →</h3></a>
+                    <a href="./sanrii.html"><h3>sanrii →</h3></a>
                 </div>
             </td>
         </tr>
@@ -379,7 +608,7 @@
             <!-- Product cards -->
             <td class="col">
                 <div class="card h-100">
-                    <a href=""><img src="./images/last1.jpg" class="card-img-top" alt="..."></a>
+                    <a href="#" class="thumbnail-link" data-bs-toggle="modal" data-bs-target="#lightboxModal9"><img src="./images/last1.jpg" class="card-img-top" alt="..."></a>
                     <div class="card-body">
                         <a href="">
                             <h5 class="card-title">Chainsaw Man Acrylic Keychain</h5>
@@ -395,9 +624,27 @@
                     </div>
                 </div>
             </td>
+            <div class="modal fade" id="lightboxModal9" tabindex="-1" aria-labelledby="Modal9" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                          <div id="lightboxCarousel9" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                              <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                      <img src="./images/last1.jpg" class="d-block w-100" alt="Genshin Phone Charms ♡ Fontaine">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
             <td class="col">
                 <div class="card h-100">
-                    <a href=""><img src="./images/last2.png" class="card-img-top" alt="..."></a>
+                    <a href="#" class="thumbnail-link" data-bs-toggle="modal" data-bs-target="#lightboxModal10"><img src="./images/last2.png" class="card-img-top" alt="..."></a>
                     <div class="card-body">
                         <a href="">
                             <h5 class="card-title">Add-on: Heart metal phone book</h5>
@@ -413,9 +660,35 @@
                     </div>
                 </div>
             </td>
+            <div class="modal fade" id="lightboxModal10" tabindex="-1" aria-labelledby="Modal10" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                          <div id="lightboxCarousel10" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                              <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                      <img src="./images/last2.png" class="d-block w-100" alt="Genshin Phone Charms ♡ Fontaine">
+                                  </div>
+                              </div>
+                              <button class="carousel-control-prev" type="button" data-bs-target="#lightboxCarousel10" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#lightboxCarousel10" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
             <td class="col">
                 <div class="card h-100">
-                    <a href=""><img src="./images/last3.jpg" class="card-img-top" alt="..."></a>
+                    <a href="#" class="thumbnail-link" data-bs-toggle="modal" data-bs-target="#lightboxModal11"><img src="./images/last3.jpg" class="card-img-top" alt="..."></a>
                     <div class="card-body">
                         <a href="">
                             <h5 class="card-title">Genshin Impact Keychains [Inazuma]</h5>
@@ -431,9 +704,35 @@
                     </div>
                 </div>
             </td>
+            <div class="modal fade" id="lightboxModal11" tabindex="-1" aria-labelledby="Modal11" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                          <div id="lightboxCarousel11" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                              <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                      <img src="./images/last3.jpg" class="d-block w-100" alt="Genshin Phone Charms ♡ Fontaine">
+                                  </div>
+                              </div>
+                              <button class="carousel-control-prev" type="button" data-bs-target="#lightboxCarousel11" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#lightboxCarousel11" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
             <td class="col">
                 <div class="card h-100">
-                    <a href=""><img src="./images/last4.jpg" class="card-img-top" alt="..."></a>
+                    <a href="#" class="thumbnail-link" data-bs-toggle="modal" data-bs-target="#lightboxModal12"><img src="./images/last4.jpg" class="card-img-top" alt="..."></a>
                     <div class="card-body">
                         <a href="">
                             <h5 class="card-title">Rainbow Holo Kirbo & Waddle dee Keychain</h5>
@@ -449,6 +748,24 @@
                     </div>
                 </div>
             </td>
+            <div class="modal fade" id="lightboxModal12" tabindex="-1" aria-labelledby="Modal12" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                          <div id="lightboxCarousel12" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                              <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                      <img src="./images/last4.jpg" class="d-block w-100" alt="Genshin Phone Charms ♡ Fontaine">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
         </tr>
     </table>
   </section>
@@ -456,7 +773,7 @@
  
   <section class="container-fluid p-3 p-md-5 d-flex justify-content-center align-items-center" style="background-color: rgb(249, 239, 241); color: rgba(101, 42, 24, 1);">
     <div class="container" id="signup-form">
-      <h3 class="text-center mb-4">✶ be the first to know!</h3>
+      <h3 class="text-center mb-4">✱ be the first to know!</h3>
       <h5 class="text-center mb-4">Sign Up Now for Shop Launches, Discounts, and More!</h5>
       <form>
         <div class="mb-3 text-center">
