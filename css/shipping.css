@@ -238,6 +238,21 @@ header div {
     transform: rotate(180deg); 
 }
 
+.shipping-table {
+    width: 100%; 
+    border-collapse: collapse; 
+}
+.shipping-table th,
+.shipping-table td {
+    border: 1px solid rgba(101, 42, 24, 1); 
+    padding: 12px; 
+    text-align: left; 
+}
+.shipping-table thead th {
+    background-color: #f2f2f2; 
+    font-weight: bold; 
+}
+
 @media all and (max-width: 1500px) {
     .accordion-item {
         margin: 0em 16em 0em 16em;
@@ -247,7 +262,7 @@ header div {
 
 @media all and (max-width: 999px) {
     .accordion-item {
-        margin: 0em 6em 0em 6em;
+        margin: 2em;
     }
 
     header h1 {
@@ -261,18 +276,31 @@ header div {
     header div {
         margin: 0em;
     }
-
-    
-
+    .shipping-table {
+        font-size: 0.7rem; 
+    }
 }
 
-@media (max-width: 576px) { 
+@media all and (max-width: 768px) {
+    .shipping-table {
+        font-size: 0.5rem;
+    }
+}
+
+@media all and (max-width: 576px) { 
     .container {
         padding-left: 15px;
         padding-right: 15px;
     }
 
 }
+
+@media (max-width: 576px) {
+  
+    .shipping-table {
+      font-size: 0.8rem; 
+    }
+  }
 
 
 @media all and (max-width: 500px) {

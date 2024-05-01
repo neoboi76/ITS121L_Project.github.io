@@ -69,7 +69,7 @@
                 <a id="navName" class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>Info</strong></a>
                 <ul class="dropdown-menu" id="navDrop">
                   <li><a class="dropdown-item" href="./about.html">about cafhune</a></li>
-                  <li><a class="dropdown-item" href="#">shipping info</a></li>
+                  <li><a class="dropdown-item" href="./shipping.html">shipping info</a></li>
                   <li><a class="dropdown-item" href="./tos.html">terms of service</a></li>
                 </ul>
               </div>
@@ -123,7 +123,7 @@
                 <a id="navName" class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>Info</strong></a>
                 <ul class="dropdown-menu" id="navDrop">
                   <li><a class="dropdown-item"  href="./about.html">about cafhune</a></li>
-                  <li><a class="dropdown-item" href="#">shipping info</a></li>
+                  <li><a class="dropdown-item" href="./shipping.html">shipping info</a></li>
                   <li><a class="dropdown-item" href="./tos.html">terms of service</a></li>
                 </ul>
               </div>
@@ -171,14 +171,14 @@
 
     <p class="text-center">GENERAL FREQUENTLY ASKED</p>
     <h1 class="mb-5 text-center" style="color: rgba(101, 42, 24, 1);">GENERAL ✿ QUESTIONS</h1>
-    <div class="accordion pb-5" id="accordionExample" >
+    <div class="accordion pb-5" id="accordionGen" >
         <div class="accordion-item" style="background-color: rgb(249, 239, 241);">
             <h1 class="accordion-header" id="headingOne" >
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" >
                   ♡ What tools do you use for your work?
                 </button>
             </h1>
-            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionGen">
                 <div class="accordion-body">
                       <p class="pt-3">
                         I use Procreate on an iPad Pro 10.2" <br>
@@ -193,7 +193,7 @@
                 ♡ Who's your supplier/s? Where do you get your products made?
               </button>
           </h1>
-          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionGen">
               <div class="accordion-body">
                   <p>
                     The majority of my products are outsourced and manufactured by small local suppliers here in the Philippines. <strong>#SupportLocal</strong>
@@ -210,7 +210,7 @@
                   ♡ Will you be restocking X item?
                 </button>
             </h1>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionGen">
                 <div class="accordion-body">
                     <p>
                       I quickly restock my stickers, button pins, art prints, and keychains ASAP. Some products may take longer but most likely will be available again too.
@@ -227,7 +227,7 @@
                   ♡ Do you do collaborations?
                 </button>
             </h1>
-            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionGen">
                 <div class="accordion-body">
                     <p> 
                       I do collaborative merchandise projects friends only. Invited artist for fanzine projects are accepted if it interests me.
@@ -244,7 +244,7 @@
                 ♡ Can I resell your products/art works?
               </button>
           </h1>
-          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionGen">
               <div class="accordion-body">
                   <p> 
                     To resell my official merchandise, it is important to note that it should be presented as a preloved item. Preloved items are those that were originally purchased directly from me but are no longer wanted by the original owner. Ensure that you resell it at a price equal to or lower than the one you initially purchased it for.
@@ -257,6 +257,50 @@
       </div>
     </div>  
   </section>
+
+  <section class="container-fluid flrp-container mb-5">
+    <div class="row">
+        <div class="col text-center">
+            <h1 id="head">Cafhune Warehouse Floorplan</h1>
+            <h2 style="color: rgba(101, 42, 24, 1);" >Look inside my warehouse</h2s>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-sm-12 d-flex justify-content-center">
+            <div class="image-container" id="map">
+                <img src="./images/floorplan.png" alt="floorplan" class="img-fluid" usemap="#floorplan">
+                <map name="floorplan">
+                    <area shape="rect" coords="37, 32, 176, 150" href="./fileroom.html#fileroom">
+                    <area shape="rect" coords="185, 32, 473, 150" href="./executive.html#executive">
+                    <area shape="rect" coords="35, 160, 176, 267" href="./break.html#break">
+                    <area shape="rect" coords="37, 276, 176, 420" href="./confroom.html#confroom">
+                    <area shape="rect" coords="240, 197, 471, 466" href="./warehouse.html#warehouse">
+                </map>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<style>
+  .flrp-container {
+    padding-top: 20px;
+}
+
+#head {
+    color: rgba(101, 42, 24, 1);
+}
+
+.image-container {
+    margin-top: 20px;
+}
+
+@media (max-width: 576px) { /* Extra small devices (phones, 576px and down) */
+    #head {
+        font-size: 1.5rem;
+    }
+}
+</style>
 
   <footer class="container-fluid p-3 p-md-5 align-items-center">
     <div class="d-flex row justify-content-center justify-content-md-evenly" >
@@ -318,7 +362,7 @@
                   <a class="dropdown-toggle  text-decoration-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Info</a>
                   <ul class="dropdown-menu" id="navDrop">
                   <li><a class="dropdown-item  text-decoration-none"  href="./about.html">about cafhune</a></li>
-                  <li><a class="dropdown-item  text-decoration-none" href="#">shipping info</a></li>
+                  <li><a class="dropdown-item  text-decoration-none" href="./shipping.html">shipping info</a></li>
                   <li><a class="dropdown-item  text-decoration-none" href="./tos.html">terms of service</a></li>
                   </ul>
               </div>

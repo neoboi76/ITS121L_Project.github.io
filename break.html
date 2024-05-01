@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>   
+		<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="Content"  content="Project: Web Design and Development">">
+		<meta name="Page" content="Break Room Page">
+
+		<link rel="icon" href="./images/favicon.png"image/x-icon">
+        <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+
+        <title>File Room</title>
+
+        <style>
+
+            .lightbox {
+                /* Default to hidden */
+                display: none;
+            
+                /* Overlay entire screen */
+                position: fixed;
+                z-index: 999;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                
+                /* A bit of padding around image */
+                padding: 1em;
+            
+                /* Translucent background */
+                background: rgba(0, 0, 0, 0.8);
+            }
+            
+            /* Unhide the lightbox when it's the target */
+            .lightbox:target {
+                display: block;
+            }
+            
+            .lightbox span {
+                /* Full width and height */
+                display: block;
+                width: 100%;
+                height: 100%;
+            
+                /* Size and position background image */
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+
+        </style>
+        
+</head>
+
+<body>
+
+   <!--  This is an html file for the lightbox of the image map
+    in the about page -->
+
+    <a href="./break.html#map" class="lightbox" id="break">
+        <span style="background-image: url('./images/break.jpg')"></span>
+    </a>
+
+</body>
+
+</html>
